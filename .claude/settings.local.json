@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\h.schoenmakers\\\\AppData\\\\Local\\\\Temp\\\\moestuin_design2\" -Recurse | ForEach-Object { $_.FullName })"
+    ]
+  }
+}

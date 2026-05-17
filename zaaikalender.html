@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zaaikalender — wat zaai je wanneer? · Moestuin.nl</title>
+  <meta name="description" content="De complete zaaikalender voor de Nederlandse moestuin — wat zaai, plant en oogst je per maand? 36 gewassen op één overzichtelijke pagina." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.moestuin.nl/zaaikalender.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.moestuin.nl/zaaikalender.html" />
+  <meta property="og:title"       content="Zaaikalender 2026 — wat zaai je wanneer? · Moestuin.nl" />
+  <meta property="og:description" content="36 groenten, kruiden en vruchten — voor elke maand een blik op wat er gezaaid, geplant of geoogst moet worden." />
+  <meta property="og:locale"      content="nl_NL" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Zaaikalender — Moestuin.nl" />
+  <meta name="twitter:description" content="36 gewassen, alle maanden. Gratis te gebruiken zaaikalender voor de Nederlandse moestuin." />
+
+  <!-- JSON-LD: Dataset + BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Zaaikalender Nederland 2026",
+    "description": "Complete zaaikalender voor de Nederlandse moestuin — 36 gewassen met zaai-, plant- en oogsttijden per maand.",
+    "url": "https://www.moestuin.nl/zaaikalender.html",
+    "keywords": ["zaaikalender", "moestuin", "zaaien", "groenten", "wanneer zaaien", "zaaitijden"],
+    "inLanguage": "nl-NL",
+    "publisher": { "@type": "Organization", "name": "Moestuin.nl", "url": "https://www.moestuin.nl" },
+    "dateModified": "2026-05-01",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home",          "item": "https://www.moestuin.nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Zaaikalender", "item": "https://www.moestuin.nl/zaaikalender.html" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/tokens.css" />
+  <link rel="stylesheet" href="assets/pages.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="bar">
+        <a href="index.html" class="brand">
+          <span>moestuin</span><span class="dot"></span><span class="tld">.nl</span>
+        </a>
+        <nav class="site-nav">
+          <a href="index.html">Coach</a>
+          <a href="zaaikalender.html" class="active">Zaaikalender</a>
+          <a href="artikel.html">Tuintips</a>
+          <a href="inzichten.html">Inzichten</a>
+        </nav>
+        <div class="header-meta">
+          <div><b id="hdr-wk">Wk --</b> · <span id="hdr-day">---</span></div>
+          <div id="hdr-date">-- --- 2026</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="cal-hero">
+    <div class="wrap">
+      <nav class="breadcrumb" style="margin-bottom: 32px;" aria-label="Broodkruimelpad">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <b>Zaaikalender</b>
+      </nav>
+      <h1>De <span class="it">zaai-</span><br />kalender, <span class="it">2026.</span></h1>
+      <div class="row">
+        <p class="lead">
+          Zesendertig groenten, kruiden en vruchten — voor elke maand een blik op
+          wat er onder de grond, in de bak of in de pot moet.
+          Selecteer een maand om alleen het seizoenswerk te zien,
+          of filter op categorie.
+        </p>
+        <div class="legend" aria-label="Legenda">
+          <div><span class="sw sw-zaai-in" aria-hidden="true"></span>Binnen voorzaaien</div>
+          <div><span class="sw sw-zaai-out" aria-hidden="true"></span>Buiten zaaien</div>
+          <div><span class="sw sw-planten" aria-hidden="true"></span>Uitplanten</div>
+          <div><span class="sw sw-oogst" aria-hidden="true"></span>Oogsten</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="month-nav" aria-label="Maandfilter">
+    <div class="wrap">
+      <div class="row">
+        <div class="months" id="months" role="group" aria-label="Selecteer maand">
+          <button data-m="1"  aria-pressed="false">Jan</button>
+          <button data-m="2"  aria-pressed="false">Feb</button>
+          <button data-m="3"  aria-pressed="false">Mrt</button>
+          <button data-m="4"  aria-pressed="false">Apr</button>
+          <button data-m="5"  aria-pressed="false">Mei</button>
+          <button data-m="6"  aria-pressed="false">Jun</button>
+          <button data-m="7"  aria-pressed="false">Jul</button>
+          <button data-m="8"  aria-pressed="false">Aug</button>
+          <button data-m="9"  aria-pressed="false">Sep</button>
+          <button data-m="10" aria-pressed="false">Okt</button>
+          <button data-m="11" aria-pressed="false">Nov</button>
+          <button data-m="12" aria-pressed="false">Dec</button>
+        </div>
+        <div class="filter" id="filter" role="group" aria-label="Categorie filter">
+          <button class="active" data-c="all"     aria-pressed="true">Alles</button>
+          <button data-c="groente" aria-pressed="false">Groente</button>
+          <button data-c="kruid"   aria-pressed="false">Kruiden</button>
+          <button data-c="vrucht"  aria-pressed="false">Vruchten</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="now-section" aria-labelledby="now-heading">
+    <div class="wrap">
+      <div class="section-head" style="border-bottom-color: var(--ink); margin-bottom: 32px;">
+        <h2 id="now-heading">Nu in <span class="it" id="now-month-label">deze maand</span> · <span id="now-count">–</span> gewassen</h2>
+        <p class="intro">Wat je deze maand kunt zaaien, uitplanten of oogsten.</p>
+        <a class="link" href="#" onclick="window.print(); return false;">Print deze maand →</a>
+      </div>
+      <div class="crop-grid" id="now-grid" aria-live="polite">
+        <!-- filled by kalender.js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="cal-grid" aria-labelledby="cal-heading">
+    <div class="wrap">
+      <div class="section-head" style="border-bottom-color: var(--ink); margin-bottom: 32px;">
+        <h2 id="cal-heading">De hele <span class="it">kalender</span></h2>
+        <p class="intro">Alle gewassen, alle maanden — één overzicht.</p>
+        <span class="meta">36 gewassen · bijgewerkt mei 2026</span>
+      </div>
+      <div style="overflow-x: auto;">
+        <table class="cal-table" id="cal-table" aria-label="Zaaikalender overzicht">
+          <!-- filled by kalender.js -->
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip: terug naar de coach -->
+  <section style="padding: 80px 0; background: var(--forest); color: var(--paper); border-top: 1px solid var(--ink);">
+    <div class="wrap" style="display:grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;">
+      <div>
+        <div style="font-family: var(--font-display); font-size: clamp(32px, 4vw, 56px); line-height: 1; margin-bottom: 12px;">
+          Vraag het aan <em>Moos.</em>
+        </div>
+        <p style="font-size: 17px; color: rgba(244,239,228,.8); margin: 0; max-width: 48ch;">
+          Specifieke vraag over een gewas of situatie? De AI coach geeft je direct een eerlijk antwoord — gratis, geen account nodig.
+        </p>
+      </div>
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:10px; background: var(--terracotta); color: var(--paper); font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; padding: 16px 24px; text-decoration: none; white-space: nowrap;">
+        Open coach →
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="grid">
+        <div>
+          <div class="big-mark">moestuin<span class="dot"></span></div>
+          <div style="max-width: 32ch; color: rgba(244,239,228,.65); font-size: 14px; line-height: 1.5;">
+            De Nederlandse AI moestuincoach — geen account nodig. Gemaakt voor wie z'n handen vies wil maken.
+          </div>
+        </div>
+        <div>
+          <h4>Stel je vraag</h4>
+          <ul>
+            <li><a href="index.html">Moestuincoach</a></li>
+            <li><a href="zaaikalender.html">Zaaikalender</a></li>
+            <li><a href="artikel.html">Tuintips</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Over</h4>
+          <ul>
+            <li><a href="#">Hoe werkt 't?</a></li>
+            <li><a href="#">Affiliate-beleid</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Beheer</h4>
+          <ul>
+            <li><a href="inzichten.html">Inzichten</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="colophon">
+        <span>© <span id="footer-year">2026</span> Moestuin.nl</span>
+        <span>Gezet uit Instrument Serif &amp; Newsreader</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function(){
+    var now=new Date(),days=["Zondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag"],
+    months=["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"],
+    d=new Date(now);d.setHours(0,0,0,0);d.setDate(d.getDate()+3-(d.getDay()+6)%7);
+    var w1=new Date(d.getFullYear(),0,4),wk=1+Math.round(((d-w1)/86400000-3+(w1.getDay()+6)%7)/7);
+    document.getElementById("hdr-wk").textContent="Wk "+wk;
+    document.getElementById("hdr-day").textContent=days[now.getDay()];
+    document.getElementById("hdr-date").textContent=now.getDate()+" "+months[now.getMonth()]+" "+now.getFullYear();
+    document.getElementById("footer-year").textContent=now.getFullYear();
+  })();
+  </script>
+  <script src="kalender.js"></script>
+</body>
+</html>
