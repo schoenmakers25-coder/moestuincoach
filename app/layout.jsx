@@ -4,6 +4,7 @@ import '../assets/pages.css'
 import '../assets/coach.css'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <SiteHeader />
         {children}
         <SiteFooter />
+        <Analytics />
       </body>
     </html>
   )
