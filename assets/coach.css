@@ -185,6 +185,8 @@
 .ask-meta {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
   margin-top: 12px;
   font-family: var(--font-mono);
   font-size: 11px;
@@ -192,6 +194,7 @@
   text-transform: uppercase;
   color: var(--muted);
 }
+.ask-meta span { white-space: nowrap; }
 .ask-meta .free { color: var(--forest); font-weight: 600; }
 
 /* ===== Starter chips ===== */

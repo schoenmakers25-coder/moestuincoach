@@ -174,7 +174,7 @@ function CoachHero({ onAsk, busy }) {
       <div className="wrap">
         <div className="kicker-row">
           <span className="kicker">Gratis AI moestuincoach · geen account</span>
-          <span className="meta">Beta · Claude AI</span>
+          <span className="meta">Beta</span>
         </div>
         <div className="coach-intro">
           <div className="coach-intro-mascot">
@@ -182,13 +182,13 @@ function CoachHero({ onAsk, busy }) {
           </div>
           <div className="coach-intro-text">
             <h1>Hallo, ik ben <span className="terra">Moos.</span></h1>
-            <p className="sub">Jouw AI moestuincoach — stel je vraag in gewoon Nederlands en krijg meteen een eerlijk antwoord. Diagnoses, zaaiadvies, plantgidsen.</p>
+            <p className="sub">Jouw AI moestuincoach — stel je vraag en krijg meteen een eerlijk antwoord. Diagnoses, zaaiadvies, plantgidsen.</p>
           </div>
         </div>
         <div className="ask-box">
           <textarea
             className="input"
-            placeholder="Stel je vraag, bijv: waarom krullen mijn tomatenblaadjes?"
+            placeholder="Stel je vraag"
             value={text}
             onChange={e => setText(e.target.value)}
             onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit() } }}

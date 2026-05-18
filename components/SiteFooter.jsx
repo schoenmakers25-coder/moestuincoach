@@ -22,10 +22,8 @@ export default function SiteFooter() {
           <div>
             <h4>Over</h4>
             <ul>
-              <li><a href="#">Hoe werkt &apos;t?</a></li>
-              <li><a href="#">Affiliate-beleid</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><Link href="/privacy">Privacy</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
           <div>
