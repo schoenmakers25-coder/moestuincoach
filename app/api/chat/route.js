@@ -1,10 +1,16 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { NextResponse } from 'next/server'
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
-
 export async function POST(request) {
+  const apiKey = process.env.ANTHROPIC_API_KEY
+  if (!apiKey) {
+    return NextResponse.json(
+      { error: 'ANTHROPIC_API_KEY is niet ingesteld in de omgevingsvariabelen.' },
+      { status: 500 }
+    )
+  }
   try {
+    const client = new Anthropic({ apiKey })
     const { system, messages } = await request.json()
     const response = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
