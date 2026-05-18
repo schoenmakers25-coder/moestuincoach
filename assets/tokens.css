@@ -19,6 +19,7 @@
   --terracotta:   #c4632e;
   --terracotta-2: #a3501f;
   --berry:        #7a2a2a;
+  --sun:          #c89a2e;
 
   /* Type */
   --font-display: "Instrument Serif", "Georgia", serif;
@@ -35,7 +36,8 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; overflow-x: hidden; }
+html { margin: 0; padding: 0; overflow-x: hidden; }
+body { margin: 0; padding: 0; }
 
 body {
   background: var(--paper);

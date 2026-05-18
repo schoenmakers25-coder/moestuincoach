@@ -15,8 +15,14 @@
   margin-bottom: 24px;
   border-bottom: 1px solid var(--line);
 }
-.coach-hero .kicker-row .kicker { color: var(--terracotta); font-weight: 500; }
-.coach-hero .kicker-row .meta   { color: var(--muted); }
+.coach-hero .kicker-row .kicker {
+  background: var(--forest);
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.coach-hero .kicker-row .meta { color: var(--muted); }
 
 /* ===== Mascot — "Moos" ===== */
 
@@ -133,11 +139,11 @@
   grid-template-columns: 1fr auto;
   align-items: stretch;
   position: relative;
-  box-shadow: 8px 8px 0 var(--paper-3);
+  box-shadow: 8px 8px 0 var(--terracotta);
   transition: box-shadow .15s, transform .15s;
 }
 .ask-box:focus-within {
-  box-shadow: 12px 12px 0 var(--paper-3);
+  box-shadow: 12px 12px 0 var(--terracotta);
   transform: translate(-2px, -2px);
 }
 .ask-box .input {
@@ -155,8 +161,8 @@
 }
 .ask-box .input::placeholder { color: var(--muted-2); }
 .ask-box button.ask {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--forest);
+  color: #fff;
   border: 0;
   padding: 0 28px;
   font-family: var(--font-mono);
@@ -173,7 +179,7 @@
   gap: 6px;
   min-width: 120px;
 }
-.ask-box button.ask:hover    { background: var(--terracotta); }
+.ask-box button.ask:hover    { background: var(--forest-2); }
 .ask-box button.ask:disabled { background: var(--muted); cursor: not-allowed; }
 .ask-box button.ask .arrow {
   font-family: var(--font-display);
@@ -216,18 +222,20 @@
 .starters .chip {
   background: var(--paper);
   border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--terracotta);
   padding: 9px 13px;
   font-family: var(--font-body);
   font-size: 14px;
   cursor: pointer;
   font-style: italic;
   color: var(--ink-2);
-  transition: background .12s, border-color .12s, color .12s;
+  transition: background .12s, border-color .12s, color .12s, transform .12s;
 }
 .starters .chip:hover {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--paper);
+  background: var(--forest);
+  border-color: var(--forest);
+  color: #fff;
+  transform: translateY(-2px);
 }
 .starters .chip .cat {
   font-family: var(--font-mono);
@@ -238,7 +246,7 @@
   color: var(--terracotta);
   margin-right: 8px;
 }
-.starters .chip:hover .cat { color: #e8c896; }
+.starters .chip:hover .cat { color: rgba(255,255,255,.7); }
 
 /* ===== Chat / answer view ===== */
 
@@ -306,6 +314,7 @@
   gap: 20px;
   background: var(--paper-2);
   border: 1.5px solid var(--line-strong);
+  border-left: 4px solid var(--forest);
   border-radius: var(--r-lg);
   padding: 20px 24px;
 }
@@ -402,7 +411,10 @@
   gap: 10px;
   min-height: 140px;
 }
-.wall .q:hover { background: var(--paper-2); }
+.wall .q:hover {
+  background: var(--paper-2);
+  border-top: 3px solid var(--terracotta);
+}
 .wall .q .head {
   display: flex;
   justify-content: space-between;
@@ -449,6 +461,8 @@
   padding-bottom: 14px;
   margin-bottom: 14px;
 }
+.how .step:nth-child(2) .num { color: var(--forest); }
+.how .step:nth-child(3) .num { color: var(--sun); }
 .how .step h3 {
   font-family: var(--font-display);
   font-size: 28px;
