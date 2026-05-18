@@ -89,6 +89,35 @@ function MascotAvatar() {
   )
 }
 
+const THINK_MESSAGES = [
+  'Even nadenken…',
+  'Moos krabt op zijn hoofd…',
+  'Goede vraag, één moment…',
+  'Aan het graven in de kennis…',
+  'De bodem wordt omgespit…',
+  'Bijna — nog even geduld…',
+  'Moos raadpleegt de plantengidsen…',
+]
+
+function ThinkingIndicator() {
+  const [idx, setIdx] = useState(0)
+  useEffect(() => {
+    const t = setInterval(() => setIdx(i => (i + 1) % THINK_MESSAGES.length), 2200)
+    return () => clearInterval(t)
+  }, [])
+  return (
+    <div className="thinking-block">
+      <CoachMascot thinking size={72} />
+      <div className="thinking-content">
+        <span className="thinking-msg" key={idx}>{THINK_MESSAGES[idx]}</span>
+        <span className="thinking-dots">
+          <span /><span /><span />
+        </span>
+      </div>
+    </div>
+  )
+}
+
 function renderMarkdown(text) {
   if (!text) return null
   const blocks = text.split(/\n\n+/)
@@ -251,10 +280,7 @@ function ChatView({ messages, busy, onAsk, onReset }) {
                     ? m.text
                     : m.text
                       ? renderMarkdown(m.text)
-                      : <div className="thinking">
-                          <span>Even nadenken</span>
-                          <span className="dots"><span></span><span></span><span></span></span>
-                        </div>
+                      : <ThinkingIndicator />
                   }
                 </div>
               </div>
