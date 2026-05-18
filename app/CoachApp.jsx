@@ -16,6 +16,31 @@ REGELS:
 - Gebruik geen emoji.
 - Format: gebruik **vet** voor belangrijke termen, opsommingen met "-".`
 
+function compressImage(file) {
+  return new Promise(resolve => {
+    const img = new Image()
+    const url = URL.createObjectURL(file)
+    img.onload = () => {
+      const MAX = 1024
+      let w = img.width, h = img.height
+      if (w > MAX || h > MAX) {
+        if (w > h) { h = Math.round(h * MAX / w); w = MAX }
+        else { w = Math.round(w * MAX / h); h = MAX }
+      }
+      const canvas = document.createElement('canvas')
+      canvas.width = w; canvas.height = h
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h)
+      URL.revokeObjectURL(url)
+      resolve({
+        data: canvas.toDataURL('image/jpeg', 0.82).split(',')[1],
+        previewUrl: canvas.toDataURL('image/jpeg', 0.6),
+        mimeType: 'image/jpeg',
+      })
+    }
+    img.src = url
+  })
+}
+
 const STARTERS = [
   { cat: 'Probleem', q: 'Waarom worden de blaadjes van mijn tomaten geel?' },
   { cat: 'Seizoen',  q: 'Wat kan ik in mei nog zaaien?' },
@@ -190,12 +215,22 @@ function Wall({ onAsk }) {
 
 function CoachHero({ onAsk, busy }) {
   const [text, setText] = useState('')
+  const [pendingImage, setPendingImage] = useState(null)
+  const fileRef = useRef(null)
+
+  async function handleFile(e) {
+    const file = e.target.files?.[0]
+    if (!file) return
+    setPendingImage(await compressImage(file))
+    e.target.value = ''
+  }
 
   function submit() {
     const t = text.trim()
     if (!t || busy) return
-    onAsk(t)
+    onAsk(t, pendingImage)
     setText('')
+    setPendingImage(null)
   }
 
   return (
@@ -223,11 +258,29 @@ function CoachHero({ onAsk, busy }) {
             onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit() } }}
             rows={2}
           />
-          <button className="ask" onClick={submit} disabled={busy || !text.trim()}>
-            <span>Vraag</span>
-            <span className="arrow">→</span>
-          </button>
+          <div className="ask-actions">
+            <label className="cam-btn" title="Foto toevoegen">
+              <input ref={fileRef} type="file" accept="image/*" hidden onChange={handleFile} />
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+            </label>
+            <button className="ask" onClick={submit} disabled={busy || !text.trim()}>
+              <span>Vraag</span>
+              <span className="arrow">→</span>
+            </button>
+          </div>
         </div>
+        {pendingImage && (
+          <div className="img-preview-strip">
+            <img src={pendingImage.previewUrl} alt="Geselecteerde foto" />
+            <div className="img-preview-info">
+              <span>Foto toegevoegd</span>
+              <button onClick={() => setPendingImage(null)}>✕ Verwijder</button>
+            </div>
+          </div>
+        )}
         <div className="ask-meta">
           <span><span className="free">● Gratis</span> &nbsp;·&nbsp; geen registratie · onbeperkt</span>
           <span>Enter om te versturen</span>
@@ -251,16 +304,26 @@ function CoachHero({ onAsk, busy }) {
 function ChatView({ messages, busy, onAsk, onReset }) {
   const endRef = useRef(null)
   const [text, setText] = useState('')
+  const [pendingImage, setPendingImage] = useState(null)
+  const fileRef = useRef(null)
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
   }, [messages.length, busy])
 
+  async function handleFile(e) {
+    const file = e.target.files?.[0]
+    if (!file) return
+    setPendingImage(await compressImage(file))
+    e.target.value = ''
+  }
+
   function submit() {
     const t = text.trim()
     if (!t || busy) return
-    onAsk(t)
+    onAsk(t, pendingImage)
     setText('')
+    setPendingImage(null)
   }
 
   return (
@@ -277,7 +340,7 @@ function ChatView({ messages, busy, onAsk, onReset }) {
                 <div className="who">{m.role === 'user' ? 'Jij' : 'Moos · moestuincoach'}</div>
                 <div className="body">
                   {m.role === 'user'
-                    ? m.text
+                    ? <>{m.image && <img src={m.image.previewUrl} alt="" className="msg-img" />}{m.text}</>
                     : m.text
                       ? renderMarkdown(m.text)
                       : <ThinkingIndicator />
@@ -294,6 +357,15 @@ function ChatView({ messages, busy, onAsk, onReset }) {
           <button onClick={() => onAsk('Welk product of gereedschap heb ik hiervoor nodig?')}>↪ Wat heb ik nodig?</button>
           <button onClick={() => onAsk('Hoe voorkom ik dit volgend seizoen?')}>↪ Volgend jaar voorkomen</button>
         </div>
+        {pendingImage && (
+          <div className="img-preview-strip compact">
+            <img src={pendingImage.previewUrl} alt="" />
+            <div className="img-preview-info">
+              <span>Foto toegevoegd</span>
+              <button onClick={() => setPendingImage(null)}>✕</button>
+            </div>
+          </div>
+        )}
         <div className="ask-box compact">
           <textarea
             className="input"
@@ -303,9 +375,18 @@ function ChatView({ messages, busy, onAsk, onReset }) {
             onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit() } }}
             rows={1}
           />
-          <button className="ask" onClick={submit} disabled={busy || !text.trim()}>
-            <span className="arrow">→</span>
-          </button>
+          <div className="ask-actions">
+            <label className="cam-btn" title="Foto toevoegen">
+              <input ref={fileRef} type="file" accept="image/*" hidden onChange={handleFile} />
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+            </label>
+            <button className="ask" onClick={submit} disabled={busy || !text.trim()}>
+              <span className="arrow">→</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -363,15 +444,24 @@ export default function CoachApp() {
 
   useEffect(() => { seedIfEmpty() }, [])
 
-  async function askCoach(question) {
+  async function askCoach(question, image = null) {
     setBusy(true)
-    setMessages(prev => [...prev, { role: 'user', text: question }, { role: 'bot', text: '' }])
+    setMessages(prev => [...prev, { role: 'user', text: question, image }, { role: 'bot', text: '' }])
     logQuestion(question)
 
     try {
-      const history = [...messages, { role: 'user', text: question }]
+      const history = [...messages, { role: 'user', text: question, image }]
         .filter(m => m.text)
-        .map(m => ({ role: m.role === 'bot' ? 'assistant' : 'user', content: m.text }))
+        .map(m => {
+          const role = m.role === 'bot' ? 'assistant' : 'user'
+          if (m.image) {
+            return { role, content: [
+              { type: 'image', source: { type: 'base64', media_type: m.image.mimeType, data: m.image.data } },
+              { type: 'text', text: m.text },
+            ]}
+          }
+          return { role, content: m.text }
+        })
 
       const reply = await callCoach(history)
 
