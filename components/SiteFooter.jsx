@@ -35,7 +35,6 @@ export default function SiteFooter() {
         </div>
         <div className="colophon">
           <span>© {new Date().getFullYear()} Moestuin.nl · Coach in beta</span>
-          <span>Gezet uit Instrument Serif &amp; Newsreader</span>
         </div>
       </div>
     </footer>
