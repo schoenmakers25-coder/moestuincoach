@@ -224,7 +224,7 @@ function ChatView({ messages, busy, onAsk, onReset }) {
   const [text, setText] = useState('')
 
   useEffect(() => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+    endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
   }, [messages.length, busy])
 
   function submit() {
