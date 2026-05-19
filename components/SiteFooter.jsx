@@ -26,12 +26,6 @@ export default function SiteFooter() {
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
-          <div>
-            <h4>Beheer</h4>
-            <ul>
-              <li><a href="/inzichten">Inzichten</a></li>
-            </ul>
-          </div>
         </div>
         <div className="colophon">
           <span>© {new Date().getFullYear()} Moestuin.nl · Coach in beta</span>
