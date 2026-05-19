@@ -19,9 +19,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <body>
-        <SiteHeader />
-        {children}
-        <SiteFooter />
+        <div id="page-clip">
+          <SiteHeader />
+          {children}
+          <SiteFooter />
+        </div>
         <Analytics />
       </body>
     </html>

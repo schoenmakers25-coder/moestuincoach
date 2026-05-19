@@ -36,8 +36,8 @@
 }
 
 * { box-sizing: border-box; }
-html { margin: 0; padding: 0; overflow-x: hidden; }
-body { margin: 0; padding: 0; overflow-x: clip; }
+html, body { margin: 0; padding: 0; }
+#page-clip { overflow-x: hidden; }
 
 body {
   background: var(--paper);
@@ -297,6 +297,7 @@ h3.card-h    { font-size: 30px; line-height: 1.05; }
   color: var(--paper);
   margin-top: 120px;
   padding: 80px 0 40px;
+  overflow: hidden;
 }
 .site-footer a { color: var(--paper); text-decoration: none; }
 .site-footer a:hover { color: var(--terracotta); }
@@ -331,7 +332,7 @@ h3.card-h    { font-size: 30px; line-height: 1.05; }
 .site-footer .big-mark {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 80px;
+  font-size: clamp(36px, 12vw, 80px);
   line-height: 1;
   margin-bottom: 16px;
 }
@@ -390,5 +391,10 @@ h3.card-h    { font-size: 30px; line-height: 1.05; }
   .site-nav { display: none; }
   .hamburger { display: block; }
   .header-meta { display: none; }
-  .site-footer .grid { grid-template-columns: 1fr 1fr; }
+  .site-footer { margin-top: 60px; padding: 48px 0 32px; }
+  .site-footer .grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+}
+@media (max-width: 480px) {
+  .site-footer .grid { grid-template-columns: 1fr; gap: 24px; }
+  .site-footer .colophon { flex-direction: column; gap: 6px; }
 }
