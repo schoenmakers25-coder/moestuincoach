@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { seedIfEmpty, logQuestion, loadQuestions, markAnswered, CATEGORIES } from '@/lib/coach-data'
 
-const COACH_SYSTEM_PROMPT = `Je bent Moos — de AI moestuincoach van moestuin.nl. Je bent een ervaren Nederlandse moestuinier en plantenkenner, met een vriendelijke en directe toon.
+const COACH_SYSTEM_PROMPT = `Je bent Moos, de AI moestuincoach van moestuin.nl. Je bent een ervaren Nederlandse moestuinier en plantenkenner, met een vriendelijke en directe toon.
 
 REGELS:
 - Antwoord in het Nederlands, met "je"/"jij".
@@ -46,7 +46,7 @@ const STARTERS = [
   { cat: 'Seizoen',  q: 'Wat kan ik in mei nog zaaien?' },
   { cat: 'Balkon',   q: 'Welke groente lukt in een pot op het balkon?' },
   { cat: 'Plagen',   q: 'Hoe houd ik slakken uit mijn moestuin?' },
-  { cat: 'Beginner', q: 'Ik begin net — wat zijn drie makkelijke groenten?' },
+  { cat: 'Beginner', q: 'Ik begin net, wat zijn drie makkelijke groenten?' },
   { cat: 'Zaaien',   q: 'Hoe diep plant ik tomaten in de volle grond?' },
   { cat: 'Bodem',    q: 'Hoe maak ik mijn zware kleigrond beter?' },
   { cat: 'Oogst',    q: 'Wanneer is mijn knoflook klaar om te rooien?' },
@@ -120,7 +120,7 @@ const THINK_MESSAGES = [
   'Goede vraag, één moment…',
   'Aan het graven in de kennis…',
   'De bodem wordt omgespit…',
-  'Bijna — nog even geduld…',
+  'Bijna, nog even geduld…',
   'Moos raadpleegt de plantengidsen…',
 ]
 
@@ -194,7 +194,7 @@ function Wall({ onAsk }) {
       <div className="wrap">
         <div className="section-head">
           <h2>Wat anderen <span className="it">vroegen</span></h2>
-          <p className="intro">Klik een vraag aan om hetzelfde antwoord te zien — of stel je eigen variant.</p>
+          <p className="intro">Klik een vraag aan om hetzelfde antwoord te zien, of stel je eigen variant.</p>
           <span className="meta">{loadQuestions().length} vragen totaal</span>
         </div>
         <div className="grid">
@@ -246,7 +246,7 @@ function CoachHero({ onAsk, busy }) {
           </div>
           <div className="coach-intro-text">
             <h1>Hallo, ik ben <span className="terra">Moos.</span></h1>
-            <p className="sub">Jouw AI moestuincoach — stel je vraag en krijg meteen een eerlijk antwoord. Diagnoses, zaaiadvies, plantgidsen.</p>
+            <p className="sub">Jouw AI moestuincoach. Stel je vraag en krijg meteen een eerlijk antwoord. Diagnoses, zaaiadvies, plantgidsen.</p>
           </div>
         </div>
         <div className="ask-box">
@@ -286,7 +286,7 @@ function CoachHero({ onAsk, busy }) {
           <span>Enter om te versturen</span>
         </div>
         <div className="starters">
-          <div className="lbl">— Of probeer een van deze vragen</div>
+          <div className="lbl">Of probeer een van deze vragen</div>
           <div className="chips">
             {STARTERS.map(s =>
               <button className="chip" key={s.q} onClick={() => onAsk(s.q)}>
@@ -405,7 +405,7 @@ function SiteIntro() {
               </svg>
             </div>
             <div className="site-intro-label">Tuintips &amp; gidsen</div>
-            <div className="site-intro-desc">Praktische artikelen over zaaien, verzorgen en oogsten — voor elk niveau.</div>
+            <div className="site-intro-desc">Praktische artikelen over zaaien, verzorgen en oogsten, voor elk niveau.</div>
           </a>
           <a href="/" className="site-intro-card site-intro-card--active">
             <div className="site-intro-icon">
@@ -414,7 +414,7 @@ function SiteIntro() {
               </svg>
             </div>
             <div className="site-intro-label">AI coach Moos</div>
-            <div className="site-intro-desc">Stel elke vraag over je moestuin — gratis, geen account, meteen antwoord.</div>
+            <div className="site-intro-desc">Stel elke vraag over je moestuin, gratis, geen account, meteen antwoord.</div>
           </a>
           <a href="/producten" className="site-intro-card">
             <div className="site-intro-icon">

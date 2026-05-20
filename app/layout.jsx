@@ -9,9 +9,9 @@ import { Analytics } from '@vercel/analytics/next'
 export const metadata = {
   title: {
     template: '%s · Moestuin.nl',
-    default: 'Moestuin.nl — Gratis AI moestuincoach, geen account nodig',
+    default: 'Moestuin.nl, gratis AI moestuincoach, geen account nodig',
   },
-  description: 'Stel je moestuinvraag aan Moos — de gratis Nederlandse AI moestuincoach. Diagnose, zaai-advies en plantgidsen. Geen account nodig.',
+  description: 'Stel je moestuinvraag aan Moos, de gratis Nederlandse AI moestuincoach. Diagnose, zaai-advies en plantgidsen. Geen account nodig.',
   metadataBase: new URL('https://www.moestuin.nl'),
 }
 

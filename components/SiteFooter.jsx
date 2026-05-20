@@ -8,7 +8,7 @@ export default function SiteFooter() {
           <div>
             <div className="big-mark">moestuin<span className="dot"></span></div>
             <div style={{ maxWidth: '34ch', color: 'rgba(244,239,228,.65)', fontSize: 14, lineHeight: 1.5 }}>
-              De Nederlandse AI moestuincoach — geen account nodig. Gemaakt voor wie z&apos;n handen vies wil maken.
+              De Nederlandse AI moestuincoach, geen account nodig. Gemaakt voor wie z&apos;n handen vies wil maken.
             </div>
           </div>
           <div>

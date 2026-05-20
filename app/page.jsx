@@ -1,21 +1,21 @@
 import CoachApp from './CoachApp'
 
 export const metadata = {
-  title: 'Moestuin.nl — Gratis AI moestuincoach, geen account nodig',
-  description: 'Stel je moestuinvraag aan Moos — de gratis Nederlandse AI moestuincoach. Diagnose, zaai-advies en plantgidsen. Geen account nodig.',
+  title: 'Moestuin.nl, gratis AI moestuincoach, geen account nodig',
+  description: 'Stel je moestuinvraag aan Moos, de gratis Nederlandse AI moestuincoach. Diagnose, zaai-advies en plantgidsen. Geen account nodig.',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.moestuin.nl/' },
   openGraph: {
     type: 'website',
     url: 'https://www.moestuin.nl/',
-    title: 'Moestuin.nl — Gratis AI moestuincoach',
-    description: 'Stel je moestuinvraag aan Moos — de gratis Nederlandse AI moestuincoach.',
+    title: 'Moestuin.nl, gratis AI moestuincoach',
+    description: 'Stel je moestuinvraag aan Moos, de gratis Nederlandse AI moestuincoach.',
     locale: 'nl_NL',
   },
   twitter: {
     card: 'summary',
-    title: 'Moestuin.nl — Gratis AI moestuincoach',
-    description: 'Stel je moestuinvraag aan Moos — de gratis Nederlandse AI moestuincoach.',
+    title: 'Moestuin.nl, gratis AI moestuincoach',
+    description: 'Stel je moestuinvraag aan Moos, de gratis Nederlandse AI moestuincoach.',
   },
 }
 

@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Tomaten uitplanten in zes stappen',
-  description: 'Hoe je tomatenplanten klaarmaakt voor de volle grond — wanneer, hoe diep, en welke drie fouten elke beginner maakt.',
+  description: 'Hoe je tomatenplanten klaarmaakt voor de volle grond: wanneer, hoe diep, en welke drie fouten elke beginner maakt.',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.moestuin.nl/artikel' },
   openGraph: {
     type: 'article',
     url: 'https://www.moestuin.nl/artikel',
-    title: 'Tomaten uitplanten in zes stappen — Moestuin.nl',
+    title: 'Tomaten uitplanten in zes stappen | Moestuin.nl',
     description: 'Wanneer, hoe diep, en de drie fouten die elke beginner maakt.',
     locale: 'nl_NL',
   },
@@ -24,7 +24,7 @@ const jsonLdHowTo = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Tomaten uitplanten in zes stappen',
-  description: 'Hoe je tomatenplanten klaarmaakt voor de volle grond — wanneer, hoe diep, en welke drie fouten elke beginner maakt.',
+  description: 'Hoe je tomatenplanten klaarmaakt voor de volle grond: wanneer, hoe diep, en welke drie fouten elke beginner maakt.',
   totalTime: 'P7D',
   supply: [
     { '@type': 'HowToSupply', name: 'Tomatenplanten (20–30 cm hoog)' },
@@ -75,13 +75,13 @@ export default function ArtikelPage() {
             <span className="meta">Bijgewerkt 12 mei 2026 · 9 min lezen</span>
           </div>
           <h1>Tomaten uitplanten <span className="it">in zes stappen.</span></h1>
-          <p className="dek">Nu de nachten boven de tien graden blijven, mogen ze de grond in. Wat je vooraf moet doen, hoe diep je plant, en de drie fouten die elke beginner maakt — getest in onze eigen tuin.</p>
+          <p className="dek">Nu de nachten boven de tien graden blijven, mogen ze de grond in. Wat je vooraf moet doen, hoe diep je plant, en de drie fouten die elke beginner maakt, getest in onze eigen tuin.</p>
           <div className="byline-row">
             <div className="byline">
               <div className="avatar">J</div>
               <div className="who">
                 <b>Joris van der Wal</b>
-                <span>Hoofdtuinier — sinds 2018</span>
+                <span>Hoofdtuinier, actief sinds 2018</span>
               </div>
             </div>
             <div className="meta">12 mei 2026 · Gewassen · 9 min</div>
@@ -97,6 +97,19 @@ export default function ArtikelPage() {
           </div>
         </div>
       </section>
+
+      <nav className="article-index-bar" aria-label="Alle artikelen">
+        <div className="wrap">
+          <span className="article-index-bar__label">Alle artikelen</span>
+          <div className="article-index-bar__links">
+            <span className="article-index-bar__current" aria-current="page">Tomaten uitplanten</span>
+            <Link href="/artikel/moestuin-beginnen">Moestuin beginnen</Link>
+            <Link href="/artikel/tomatenstokken">Tomatenstokken zetten</Link>
+            <Link href="/artikel/tomatenproblemen">Tomatenproblemen</Link>
+            <Link href="/artikel/tomatenrassen">Tomatenrassen</Link>
+          </div>
+        </div>
+      </nav>
 
       <section className="article-body">
         <div className="wrap">
@@ -124,7 +137,7 @@ export default function ArtikelPage() {
 
               <blockquote>De tomatenplant rekent in wortels, niet in bladeren. Elke ondergrondse centimeter wordt extra wortel — en extra vrucht.</blockquote>
 
-              <h2 id="stap-2"><span className="num">Stap 02</span>De plant afharden — een week vooraf</h2>
+              <h2 id="stap-2"><span className="num">Stap 02</span>De plant afharden, een week vooraf</h2>
               <p>Een plant uit een warme kas naar buiten zetten zonder afharden kost twee weken herstel. Doe het rustig: dag één een uur buiten, dag twee twee uur, en zo verder. Na een week staat hij dag en nacht buiten en kan hij de grond in.</p>
 
               <h3>Wat je vooral niet moet doen</h3>
@@ -149,7 +162,7 @@ export default function ArtikelPage() {
               <p>Zet de stok of kooi <em>tegelijk met</em> de plant in de grond. Nooit later. Als je het uitstelt, prik je vier weken later door de wortels. Ruimte: vijftig centimeter tussen planten, zestig als je in de volle grond zit.</p>
 
               <h2 id="stap-6"><span className="num">Stap 06</span>De eerste twee weken</h2>
-              <p>Water geven: ja, maar onderaan, niet op de bladeren. Bemesten: nee, nog niet. De plant moet eerst zijn nieuwe wortels uitbouwen. Pas na twee weken — als je nieuwe groei ziet — begin je met een lichte bemesting.</p>
+              <p>Water geven: ja, maar onderaan, niet op de bladeren. Bemesten: nee, nog niet. De plant moet eerst zijn nieuwe wortels uitbouwen. Pas na twee weken, als je nieuwe groei ziet, begin je met een lichte bemesting.</p>
 
               <h2 id="fouten"><span className="num">Drie fouten</span>Wat we steeds weer zien misgaan</h2>
               <p>Eén: te vroeg. Dit is veruit de meest gemaakte fout. Twee: te ondiep. Drie: meteen bemesten alsof je een record wilt zetten — wat je krijgt is bladmassa, geen vruchten. Houd je aan deze zes stappen en je hebt vanaf eind juli ruim tomaten op tafel.</p>
@@ -159,7 +172,7 @@ export default function ArtikelPage() {
             <aside className="aside" aria-label="Samenvatting en aanvullende info">
               <div className="box">
                 <div className="lbl">Op een rij</div>
-                <h5>Tomaten uitplanten — Mei</h5>
+                <h5>Tomaten uitplanten, mei</h5>
                 <div className="row"><span>Wanneer</span><b>10–25 mei</b></div>
                 <div className="row"><span>Bodem ≥</span><b>12°C</b></div>
                 <div className="row"><span>Plantdiepte</span><b>10–15 cm</b></div>
@@ -225,7 +238,7 @@ export default function ArtikelPage() {
               </div>
               <div className="meta-row"><span className="tag">Rassen</span><span className="meta">12 min · 20 apr</span></div>
               <h3>Tien tomatenrassen <span className="it">die altijd lukken</span></h3>
-              <p className="excerpt">Van Gardeners&apos; Delight tot Brandywine — getest op smaak, opbrengst, en hoe vergevingsgezind ze zijn.</p>
+              <p className="excerpt">Van Gardeners&apos; Delight tot Brandywine, getest op smaak, opbrengst en hoe vergevingsgezind ze zijn.</p>
               <Link href="/artikel/tomatenrassen" className="read">Lees verder →</Link>
             </article>
           </div>

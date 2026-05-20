@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Over Moestuin.nl — De Nederlandse AI moestuincoach',
+  title: 'Over Moestuin.nl, de Nederlandse AI moestuincoach',
   description: 'Moestuin.nl combineert een gratis AI moestuincoach met praktische tuinierstips en productaanbevelingen. Leer wie wij zijn en wat je op deze site vindt.',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.moestuin.nl/over' },
@@ -20,16 +20,16 @@ export default function OverPage() {
       </h1>
 
       <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-2)', maxWidth: '58ch', marginBottom: 56, borderBottom: '1px solid var(--line)', paddingBottom: 40 }}>
-        Moestuin.nl helpt Nederlandse tuiniers — van complete beginner tot doorgewinterde moestuinier — met eerlijk en praktisch advies. Geen account, geen gedoe.
+        Moestuin.nl helpt Nederlandse tuiniers, van complete beginner tot doorgewinterde moestuinier, met eerlijk en praktisch advies. Geen account, geen gedoe.
       </p>
 
       <section style={{ marginBottom: 56 }}>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 16 }}>De AI coach: Moos</h2>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
-          Het hart van de site is <strong>Moos</strong> — een gratis AI moestuincoach die je direct en persoonlijk advies geeft. Stel een vraag in gewoon Nederlands en je krijgt meteen een concreet antwoord: diagnoses, zaaiadvies, informatie over plagen, bodem, seizoensplanning.
+          Het hart van de site is <strong>Moos</strong>, een gratis AI moestuincoach die je direct en persoonlijk advies geeft. Stel een vraag in gewoon Nederlands en je krijgt meteen een concreet antwoord: diagnoses, zaaiadvies, informatie over plagen, bodem, seizoensplanning.
         </p>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
-          Moos is gebouwd op geavanceerde AI-technologie en getraind op een brede kennisbasis over moestuinieren. Je kunt ook foto&apos;s sturen — handig als je een ziekte of plaag niet herkent.
+          Moos is gebouwd op geavanceerde AI-technologie en getraind op een brede kennisbasis over moestuinieren. Je kunt ook foto&apos;s sturen, handig als je een ziekte of plaag niet herkent.
         </p>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)' }}>
           De coach is gratis en blijft gratis. Geen account, geen registratie, geen limiet op het aantal vragen.
@@ -39,7 +39,7 @@ export default function OverPage() {
       <section style={{ marginBottom: 56 }}>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 16 }}>Tuintips &amp; gidsen</h2>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
-          Naast de coach biedt Moestuin.nl redactionele artikelen en gidsen — praktische informatie die we regelmatig aanvullen. Denk aan beginnersgidsen, zaaiplanners, en seizoensoverzichten.
+          Naast de coach biedt Moestuin.nl redactionele artikelen en gidsen, praktische informatie die we regelmatig aanvullen. Denk aan beginnersgidsen, zaaiplanners, en seizoensoverzichten.
         </p>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)' }}>
           Alle content is geschreven vanuit het perspectief van de tuinier: wat werkt echt, wat is onzin, en wat heb je minimaal nodig om te beginnen.
@@ -57,7 +57,7 @@ export default function OverPage() {
           Op de productenpagina vind je een eerlijke selectie van zaden, gereedschap, potgrond en kweekmateriaal dat wij zelf de moeite waard vinden. Geen willekeurige webshop-listings, maar gerichte aanbevelingen met uitleg waarom iets goed is voor beginners of gevorderden.
         </p>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)' }}>
-          Dit is ook hoe we de site bekostigen: als je via onze aanbevelingen iets koopt, ontvangen we soms een kleine commissie — zonder dat je daar iets extra voor betaalt. Zo blijft de coach gratis.
+          Dit is ook hoe we de site bekostigen: als je via onze aanbevelingen iets koopt, ontvangen we soms een kleine commissie, zonder dat je daar iets extra voor betaalt. Zo blijft de coach gratis.
         </p>
         <div style={{ marginTop: 20 }}>
           <Link href="/producten" style={{ display: 'inline-block', fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--terracotta)', textDecoration: 'none', borderBottom: '1px solid var(--terracotta)', paddingBottom: 2 }}>
@@ -71,7 +71,7 @@ export default function OverPage() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 1, background: 'var(--line)', border: '1px solid var(--line)' }}>
           {[
             ['Gelanceerd', 'Mei 2026'],
-            ['Coach', 'Moos — AI-powered, gratis'],
+            ['Coach', 'Moos, AI-powered, gratis'],
             ['Taal', 'Nederlands (NL + BE)'],
             ['Account nodig', 'Nee'],
             ['Kosten', 'Gratis voor tuiniers'],
@@ -101,7 +101,7 @@ export default function OverPage() {
         </p>
         <p style={{ fontSize: 14, color: 'rgba(244,239,228,.7)', margin: 0, lineHeight: 1.5 }}>
           <Link href="/" style={{ color: '#e8c896', textDecoration: 'none', borderBottom: '1px solid #e8c896' }}>Open de coach</Link>
-          {' '}— gratis, geen account, meteen aan de slag.
+          , gratis, geen account, meteen aan de slag.
         </p>
       </div>
 

@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     type: 'article',
     url: 'https://www.moestuin.nl/artikel/moestuin-beginnen',
-    title: 'Moestuin beginnen: complete gids voor beginners — Moestuin.nl',
+    title: 'Moestuin beginnen: complete gids voor beginners | Moestuin.nl',
     description: 'De juiste plek, de beste groenten voor starters, grond voorbereiden en de vijf fouten die elke beginner maakt.',
     locale: 'nl_NL',
   },
@@ -39,7 +39,7 @@ const jsonLdFaq = {
     {
       '@type': 'Question',
       name: 'Welke groenten zijn het makkelijkst voor beginners?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Radijs, sla, spinazie, courgette en stambonen zijn de beste keuzes voor beginners. Ze groeien snel, vragen weinig aandacht en geven snel resultaat — wat motiveert om door te gaan.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Radijs, sla, spinazie, courgette en stambonen zijn de beste keuzes voor beginners. Ze groeien snel, vragen weinig aandacht en geven snel resultaat, wat motiveert om door te gaan.' },
     },
     {
       '@type': 'Question',
@@ -96,7 +96,7 @@ export default function MoestuinBeginnersPage() {
               <div className="avatar">J</div>
               <div className="who">
                 <b>Joris van der Wal</b>
-                <span>Hoofdtuinier — sinds 2018</span>
+                <span>Hoofdtuinier, actief sinds 2018</span>
               </div>
             </div>
             <div className="meta">18 mei 2026 · Beginners · 14 min</div>
@@ -112,6 +112,19 @@ export default function MoestuinBeginnersPage() {
           </div>
         </div>
       </section>
+
+      <nav className="article-index-bar" aria-label="Alle artikelen">
+        <div className="wrap">
+          <span className="article-index-bar__label">Alle artikelen</span>
+          <div className="article-index-bar__links">
+            <Link href="/artikel">Tomaten uitplanten</Link>
+            <span className="article-index-bar__current" aria-current="page">Moestuin beginnen</span>
+            <Link href="/artikel/tomatenstokken">Tomatenstokken zetten</Link>
+            <Link href="/artikel/tomatenproblemen">Tomatenproblemen</Link>
+            <Link href="/artikel/tomatenrassen">Tomatenrassen</Link>
+          </div>
+        </div>
+      </nav>
 
       <section className="article-body">
         <div className="wrap">
@@ -134,7 +147,7 @@ export default function MoestuinBeginnersPage() {
             <article className="prose">
               <p>Ieder jaar beginnen tienduizenden Nederlanders aan hun eerste moestuin. De helft geeft het op voor de zomer voorbij is. Niet omdat tuinieren moeilijk is — maar omdat ze te groot beginnen, de verkeerde plek kiezen of groenten kweken die te veel aandacht vragen. Dit gaat over hoe je het anders doet.</p>
 
-              <h2 id="plek"><span className="num">Stap 01</span>De juiste plek kiezen — zon is alles</h2>
+              <h2 id="plek"><span className="num">Stap 01</span>De juiste plek kiezen: zon is alles</h2>
               <p>De locatie van je moestuin is de beslissing die alles bepaalt. Je kunt de beste zaden kopen, de rijkste grond aanleggen en zorgvuldig water geven — maar als de plek niet goed is, mislukt het toch. Het belangrijkste criterium is zon.</p>
               <p>De meeste groenten hebben minimaal <b>zes uur directe zon per dag</b> nodig. Tomaten, paprika, courgette en komkommer willen liefst acht uur of meer. Bladgroenten als sla, spinazie en kropsla redden het met vier uur, maar groeien in volle zomer juist beter met wat middag­schaduw.</p>
 
@@ -148,7 +161,7 @@ export default function MoestuinBeginnersPage() {
                 <li><b>Makkelijk te bereiken.</b> Als je er elke dag even langs wilt, moet het niet voelen als een expeditie.</li>
               </ul>
 
-              <h2 id="grootte"><span className="num">Stap 02</span>Hoe groot beginnen — kleiner dan je denkt</h2>
+              <h2 id="grootte"><span className="num">Stap 02</span>Hoe groot beginnen, kleiner dan je denkt</h2>
               <p>Dit is waar de meeste beginners de mist ingaan: ze beginnen te groot. Een moestuin van twintig vierkante meter ziet er in april heerlijk overzichtelijk uit. In juli is het een onkruidjungle die elke avond twee uur werk vraagt.</p>
 
               <div className="pull">
@@ -163,15 +176,15 @@ export default function MoestuinBeginnersPage() {
 
               <h3>De makkelijkste keuzes</h3>
               <ul>
-                <li><b>Radijs</b> — klaar in drie tot vier weken. Perfecte eerste oogst. Zaai elke twee weken voor een doorlopende oogst.</li>
-                <li><b>Sla en veldsla</b> — groeit snel, kan redelijk schaduw verdragen. Oogst blaadjes, laat de plant staan.</li>
-                <li><b>Courgette</b> — één plant geeft de hele zomer meer courgettes dan je ooit op kunt. Serieus — begin met één plant.</li>
-                <li><b>Stambonen</b> — zaai ze direct in de grond na 15 mei, ze groeien vanzelf. Geen stok nodig.</li>
-                <li><b>Spinazie</b> — zaai vroeg (vanaf maart), oogst jong. Gaat in de zomer snel to zaad, maar zaai in september opnieuw voor een herfstoogst.</li>
-                <li><b>Bieslook</b> — plant het één keer en het komt elk jaar terug. Knippen, gebruiken, groeien.</li>
+                <li><b>Radijs:</b> klaar in drie tot vier weken. Perfecte eerste oogst. Zaai elke twee weken voor een doorlopende oogst.</li>
+                <li><b>Sla en veldsla:</b> groeit snel, kan redelijk schaduw verdragen. Oogst blaadjes, laat de plant staan.</li>
+                <li><b>Courgette:</b> één plant geeft de hele zomer meer courgettes dan je ooit op kunt. Serieus, begin met één plant.</li>
+                <li><b>Stambonen:</b> zaai ze direct in de grond na 15 mei, ze groeien vanzelf. Geen stok nodig.</li>
+                <li><b>Spinazie:</b> zaai vroeg (vanaf maart), oogst jong. Gaat in de zomer snel to zaad, maar zaai in september opnieuw voor een herfstoogst.</li>
+                <li><b>Bieslook:</b> plant het één keer en het komt elk jaar terug. Knippen, gebruiken, groeien.</li>
               </ul>
 
-              <h3>Eén ambitieuze groente — tomaat</h3>
+              <h3>Eén ambitieuze groente: de tomaat</h3>
               <p>Bijna elke beginner wil tomaten. Dat begrijpen we. Tomaten zijn heerlijk en de voldoening van je eerste zelfgekweekte tomaat is ongeëvenaard. Maar ze vragen meer: afharden, dieven uitbreken, water­beheer, steun. Neem er één of twee planten bij als experiment naast je makkelijke gewassen — niet als je hoofdgewas.</p>
 
               <h2 id="grond"><span className="num">Stap 04</span>De grond voorbereiden</h2>
@@ -213,7 +226,7 @@ export default function MoestuinBeginnersPage() {
 
               <h3>Zomer (juni – augustus)</h3>
               <ul>
-                <li>Regelmatig oogsten — hoe meer je plukt, hoe meer er groeit</li>
+                <li>Regelmatig oogsten: hoe meer je plukt, hoe meer er groeit</li>
                 <li>Tomaten dieven uitbreken en bijbemesten</li>
                 <li>Courgette niet te lang laten hangen</li>
                 <li>Onkruid bijhouden, bij voorkeur na regen</li>
@@ -231,7 +244,7 @@ export default function MoestuinBeginnersPage() {
               <ul>
                 <li><b>Te groot beginnen.</b> Je verliest het overzicht en de motivatie. Begin met 4–6 m².</li>
                 <li><b>Onvoldoende zon.</b> Vier uur zon geeft een halfslachtige oogst. Zes tot acht uur geeft een echte oogst.</li>
-                <li><b>Te weinig water geven — of juist te veel.</b> Elke dag een beetje water is slechter dan twee keer per week diep water geven. Oppervlakkig water geven kweekt oppervlakkige wortels.</li>
+                <li><b>Te weinig of te veel water geven.</b> Elke dag een beetje water is slechter dan twee keer per week diep water geven. Oppervlakkig water geven kweekt oppervlakkige wortels.</li>
                 <li><b>Onkruid laten staan.</b> Onkruid concurreert om vocht en voedingsstoffen. Tien minuten per week bijhouden is beter dan één uur per maand inhalen.</li>
                 <li><b>Te veel tegelijk willen.</b> Tien soorten groenten in je eerste seizoen leidt tot chaos. Kies vier tot zes soorten en leer die goed kennen.</li>
               </ul>
@@ -248,7 +261,7 @@ export default function MoestuinBeginnersPage() {
               <p>Ja, maar niet overdreven. Compost bij het begin van het seizoen is de basis. Tomaten en courgettes bijmesten met een vloeibare tomatenmest elke twee weken vanaf juni. Bladgroenten hebben nauwelijks extra bemesting nodig als de grond goed is.</p>
 
               <h3>Wat doe ik als er iets mis gaat?</h3>
-              <p>Stel je vraag aan <Link href="/">Moos, de gratis AI moestuincoach</Link>. Beschrijf wat je ziet — gele blaadjes, bruine vlekken, krullende bladeren — en je krijgt binnen seconden een diagnose.</p>
+              <p>Stel je vraag aan <Link href="/">Moos, de gratis AI moestuincoach</Link>. Beschrijf wat je ziet, zoals gele blaadjes, bruine vlekken of krullende bladeren, en je krijgt binnen seconden een diagnose.</p>
 
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--muted)', marginTop: 56, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
                 Dit artikel is onderdeel van de beginnersgidsen van Moestuin.nl. Alle adviezen zijn gebaseerd op eigen ervaring en getoetst aan gangbare tuiniersliteratuur.
@@ -258,7 +271,7 @@ export default function MoestuinBeginnersPage() {
             <aside className="aside" aria-label="Samenvatting">
               <div className="box">
                 <div className="lbl">Snel aan de slag</div>
-                <h5>Moestuin beginnen — checklist</h5>
+                <h5>Moestuin beginnen, checklist</h5>
                 <div className="row"><span>Oppervlakte</span><b>4–6 m²</b></div>
                 <div className="row"><span>Zon minimaal</span><b>6 uur/dag</b></div>
                 <div className="row"><span>Grond</span><b>+ compost</b></div>
@@ -310,7 +323,7 @@ export default function MoestuinBeginnersPage() {
               </div>
               <div className="meta-row"><span className="tag terra">Probleem</span><span className="meta">6 min</span></div>
               <h3>Wat is er mis met je tomaten? <span className="it">Zes diagnoses</span></h3>
-              <p className="excerpt">Bruine blaadjes, krullende toppen, splijtende vruchten — hoe je weet wat er aan de hand is.</p>
+              <p className="excerpt">Bruine blaadjes, krullende toppen, splijtende vruchten: hoe je weet wat er aan de hand is.</p>
               <Link href="/artikel/tomatenproblemen" className="read">Lees verder →</Link>
             </article>
             <article className="article-card">
