@@ -142,7 +142,7 @@ export default function ArtikelOverzichtPage() {
       ))}
 
       <section style={{ padding: '72px 0', background: 'var(--forest)', color: 'var(--paper)' }}>
-        <div className="wrap" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 40, alignItems: 'center' }}>
+        <div className="wrap page-cta-grid">
           <div>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(244,239,228,.55)', marginBottom: 12 }}>Gratis hulp</div>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 4vw, 36px)', lineHeight: 1.1, margin: '0 0 12px' }}>

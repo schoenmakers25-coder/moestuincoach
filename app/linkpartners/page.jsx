@@ -76,7 +76,7 @@ export default function LinkpartnersPage() {
             ['Wederkerigheid', 'We staan open voor linkruil mits beide pagina\'s inhoudelijk relevant zijn voor de bezoekers.'],
             ['Ankertekst', 'We gebruiken beschrijvende ankerteksten die de bestemming accuraat omschrijven.'],
           ].map(([title, text]) => (
-            <div key={title} style={{ display: 'grid', gridTemplateColumns: '160px 1fr', gap: '16px 32px', padding: '18px 0', borderBottom: '1px solid var(--line)', alignItems: 'start' }}>
+            <div key={title} className="linkpartners-row" style={{ display: 'grid', gridTemplateColumns: '160px 1fr', gap: '16px 32px', padding: '18px 0', borderBottom: '1px solid var(--line)', alignItems: 'start' }}>
               <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)', paddingTop: 3 }}>{title}</div>
               <div style={{ lineHeight: 1.65, color: 'var(--ink-2)', fontSize: 16 }}>{text}</div>
             </div>

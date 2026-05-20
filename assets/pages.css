@@ -1181,3 +1181,47 @@
   background: var(--paper);
   border-bottom: 2px solid var(--terracotta);
 }
+
+/* ===== Responsive fixes voor inline-grid pagina's ===== */
+
+/* CTA-strook onderaan producten- en tuintips-pagina */
+.page-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Categorie-intro grid (280px | beschrijving) in producten */
+.page-cat-intro {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px 64px;
+  margin-bottom: 48px;
+  align-items: start;
+}
+
+/* Product-cards grid in producten (minmax 280px) */
+.page-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1px;
+}
+
+@media (max-width: 700px) {
+  .page-cta-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .page-cat-intro {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .page-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .linkpartners-row {
+    grid-template-columns: 1fr !important;
+    gap: 4px 0 !important;
+  }
+}

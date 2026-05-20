@@ -190,7 +190,7 @@ export default function ProductenPage() {
       {CATEGORIES.map((cat, ci) => (
         <section key={cat.id} id={cat.id} style={{ padding: '72px 0', borderBottom: '1px solid var(--line)', background: ci % 2 === 1 ? 'var(--paper-2)' : 'var(--paper)' }}>
           <div className="wrap">
-            <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: '40px 64px', marginBottom: 48, alignItems: 'start' }}>
+            <div className="page-cat-intro">
               <div>
                 <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 8 }}>Categorie</div>
                 <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 40px)', lineHeight: 1.0, margin: '0 0 16px' }}>{cat.label}</h2>
@@ -198,7 +198,7 @@ export default function ProductenPage() {
               <p style={{ fontSize: 16, lineHeight: 1.7, color: 'var(--ink-2)', margin: 0, paddingTop: 28 }}>{cat.intro}</p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 1, background: 'var(--line-strong)', border: '1px solid var(--line-strong)' }}>
+            <div className="page-cards-grid" style={{ background: 'var(--line-strong)', border: '1px solid var(--line-strong)' }}>
               {cat.products.map(p => (
                 <div key={p.name} style={{ background: ci % 2 === 1 ? 'var(--paper)' : 'var(--paper-2)', padding: '28px 24px', display: 'flex', flexDirection: 'column', gap: 12 }}>
                   <div style={{ fontFamily: 'var(--font-mono)', fontSize: 9, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--terracotta)' }}>{p.tag}</div>
@@ -224,7 +224,7 @@ export default function ProductenPage() {
       ))}
 
       <section style={{ padding: '72px 0', background: 'var(--forest)', color: 'var(--paper)' }}>
-        <div className="wrap" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 40, alignItems: 'center' }}>
+        <div className="wrap page-cta-grid">
           <div>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(244,239,228,.55)', marginBottom: 12 }}>Gratis hulp</div>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 4vw, 36px)', lineHeight: 1.1, margin: '0 0 12px' }}>
