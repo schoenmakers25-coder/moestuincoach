@@ -17,11 +17,13 @@ export default function SiteFooter() {
               <li><Link href="/">Moestuincoach</Link></li>
               <li><Link href="/zaaikalender">Zaaikalender</Link></li>
               <li><Link href="/artikel">Tuintips</Link></li>
+              <li><Link href="/producten">Producten</Link></li>
             </ul>
           </div>
           <div>
             <h4>Over</h4>
             <ul>
+              <li><Link href="/over">Over Moestuin.nl</Link></li>
               <li><Link href="/privacy">Privacy</Link></li>
               <li><Link href="/contact">Contact</Link></li>
               <li><Link href="/linkpartners">Linkpartners</Link></li>

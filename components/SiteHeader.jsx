@@ -34,6 +34,8 @@ export default function SiteHeader() {
     { href: '/',              label: 'Coach' },
     { href: '/zaaikalender', label: 'Zaaikalender' },
     { href: '/artikel',      label: 'Tuintips' },
+    { href: '/producten',    label: 'Producten' },
+    { href: '/over',         label: 'Over' },
     { href: '/privacy',      label: 'Privacy' },
     { href: '/contact',      label: 'Contact' },
   ]
@@ -50,6 +52,8 @@ export default function SiteHeader() {
               <Link href="/"              className={pathname === '/'             ? 'active' : ''}>Coach</Link>
               <Link href="/zaaikalender" className={pathname === '/zaaikalender' ? 'active' : ''}>Zaaikalender</Link>
               <Link href="/artikel"      className={pathname === '/artikel'      ? 'active' : ''}>Tuintips</Link>
+              <Link href="/producten"    className={pathname === '/producten'    ? 'active' : ''}>Producten</Link>
+              <Link href="/over"         className={pathname === '/over'         ? 'active' : ''}>Over</Link>
             </nav>
             <div className="header-right">
               <div className="header-meta">

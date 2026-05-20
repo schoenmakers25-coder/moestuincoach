@@ -393,6 +393,44 @@ function ChatView({ messages, busy, onAsk, onReset }) {
   )
 }
 
+function SiteIntro() {
+  return (
+    <section className="site-intro">
+      <div className="wrap">
+        <div className="site-intro-grid">
+          <a href="/artikel" className="site-intro-card">
+            <div className="site-intro-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+            </div>
+            <div className="site-intro-label">Tuintips &amp; gidsen</div>
+            <div className="site-intro-desc">Praktische artikelen over zaaien, verzorgen en oogsten — voor elk niveau.</div>
+          </a>
+          <a href="/" className="site-intro-card site-intro-card--active">
+            <div className="site-intro-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <div className="site-intro-label">AI coach Moos</div>
+            <div className="site-intro-desc">Stel elke vraag over je moestuin — gratis, geen account, meteen antwoord.</div>
+          </a>
+          <a href="/producten" className="site-intro-card">
+            <div className="site-intro-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+            </div>
+            <div className="site-intro-label">Productaanbevelingen</div>
+            <div className="site-intro-desc">Zaden, gereedschap en kweekmateriaal — eerlijke keuzes voor jouw moestuin.</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function HowItWorks() {
   return (
     <section className="how">
@@ -500,6 +538,7 @@ export default function CoachApp() {
         ? <ChatView messages={messages} busy={busy} onAsk={askCoach} onReset={reset} />
         : <CoachHero onAsk={askCoach} busy={busy} />
       }
+      {!inChat && <SiteIntro />}
       {!inChat && <Wall onAsk={askCoach} />}
       {!inChat && <HowItWorks />}
     </>
