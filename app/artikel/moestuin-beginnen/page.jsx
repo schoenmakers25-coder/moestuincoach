@@ -117,7 +117,7 @@ export default function MoestuinBeginnersPage() {
         <div className="wrap">
           <span className="article-index-bar__label">Alle artikelen</span>
           <div className="article-index-bar__links">
-            <Link href="/artikel">Tomaten uitplanten</Link>
+            <Link href="/artikel/tomaten-uitplanten">Tomaten uitplanten</Link>
             <span className="article-index-bar__current" aria-current="page">Moestuin beginnen</span>
             <Link href="/artikel/tomatenstokken">Tomatenstokken zetten</Link>
             <Link href="/artikel/tomatenproblemen">Tomatenproblemen</Link>
