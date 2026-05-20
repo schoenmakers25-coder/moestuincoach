@@ -188,11 +188,19 @@ export default function ArtikelPage() {
       <section className="related-strip" aria-label="Gerelateerde artikelen">
         <div className="wrap">
           <div className="section-head" style={{ borderBottomColor: 'var(--ink)', marginBottom: 40 }}>
-            <h2>Lees <span className="it">verder</span></h2>
-            <p className="intro">Drie artikelen die hier logisch op aansluiten.</p>
-            <a className="link" href="#">Alle tuintips →</a>
+            <h2>Meer <span className="it">tuintips</span></h2>
+            <p className="intro">Alle artikelen van Moestuin.nl.</p>
           </div>
           <div className="row">
+            <article className="article-card">
+              <div style={{ position: 'relative', width: '100%', aspectRatio: '4/3', overflow: 'hidden' }}>
+                <Image src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=450&fit=crop&auto=format&q=75" alt="Moestuin beginnen voor beginners" fill style={{ objectFit: 'cover' }} />
+              </div>
+              <div className="meta-row"><span className="tag">Beginners</span><span className="meta">14 min · 18 mei</span></div>
+              <h3>Moestuin beginnen <span className="it">de complete gids</span></h3>
+              <p className="excerpt">Plek kiezen, grond voorbereiden, de makkelijkste groenten en de vijf fouten die elke beginner maakt.</p>
+              <Link href="/artikel/moestuin-beginnen" className="read">Lees verder →</Link>
+            </article>
             <article className="article-card">
               <div style={{ position: 'relative', width: '100%', aspectRatio: '4/3', overflow: 'hidden' }}>
                 <Image src="https://images.unsplash.com/photo-1592841200221-a6898f307baa?w=600&h=450&fit=crop&auto=format&q=75" alt="Tomatenstokken plaatsen" fill style={{ objectFit: 'cover' }} />

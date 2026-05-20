@@ -24,6 +24,7 @@ export default function SiteFooter() {
             <ul>
               <li><Link href="/privacy">Privacy</Link></li>
               <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/linkpartners">Linkpartners</Link></li>
             </ul>
           </div>
         </div>
