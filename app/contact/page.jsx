@@ -1,42 +1,62 @@
+import ContactForm from './ContactForm'
+
 export const metadata = {
-  title: 'Contact · Moestuin.nl',
-  description: 'Neem contact op met Moestuin.nl.',
+  title: 'Contact',
+  description: 'Neem contact op met Moestuin.nl. Stel een vraag, meld een fout of deel een suggestie.',
+  robots: { index: true, follow: true },
+  alternates: { canonical: 'https://www.moestuin.nl/contact' },
 }
 
 export default function ContactPage() {
   return (
-    <main style={{ maxWidth: 560, margin: '0 auto', padding: '60px 24px 100px' }}>
-      <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(28px, 5vw, 42px)', marginBottom: 8 }}>
+    <main style={{ maxWidth: 760, margin: '0 auto', padding: '60px 24px 100px' }}>
+
+      <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terracotta)', marginBottom: 16 }}>
         Contact
+      </div>
+
+      <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 6vw, 56px)', lineHeight: 1.0, letterSpacing: '-0.01em', marginBottom: 20 }}>
+        Stuur ons <span style={{ fontStyle: 'italic', color: 'var(--terracotta)' }}>een bericht.</span>
       </h1>
-      <p style={{ color: 'var(--muted)', fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 40 }}>
-        Moestuin.nl
+
+      <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-2)', maxWidth: '52ch', marginBottom: 56, borderBottom: '1px solid var(--line)', paddingBottom: 40 }}>
+        Vraag, foutmelding of suggestie? We lezen alles en reageren doorgaans binnen drie werkdagen.
       </p>
 
-      <p style={{ lineHeight: 1.7, fontSize: 16, marginBottom: 24 }}>
-        Heb je een vraag, foutmelding of suggestie? Stuur een e-mail naar:
-      </p>
+      <div className="contact-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 280px', gap: '0 64px', alignItems: 'start' }}>
+        <ContactForm />
 
-      <a
-        href="mailto:info@moestuin.nl"
-        style={{
-          display: 'inline-block',
-          fontFamily: 'var(--font-mono)',
-          fontSize: 16,
-          fontWeight: 600,
-          color: 'var(--terra)',
-          letterSpacing: '0.05em',
-          textDecoration: 'none',
-          borderBottom: '2px solid var(--terra)',
-          paddingBottom: 2,
-        }}
-      >
-        info@moestuin.nl
-      </a>
+        <aside style={{ paddingTop: 4 }}>
+          <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 16 }}>
+            Of stuur direct een mail
+          </div>
+          <a
+            href="mailto:info@moestuin.nl"
+            style={{ fontFamily: 'var(--font-display)', fontSize: 18, color: 'var(--terracotta)', textDecoration: 'none', borderBottom: '1px solid var(--terracotta)', paddingBottom: 2, display: 'inline-block', marginBottom: 32 }}
+          >
+            info@moestuin.nl
+          </a>
 
-      <p style={{ lineHeight: 1.7, fontSize: 15, color: 'var(--muted)', marginTop: 40 }}>
-        Wij proberen binnen drie werkdagen te reageren.
-      </p>
+          <div style={{ borderTop: '1px solid var(--line)', paddingTop: 24 }}>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
+              Reactietijd
+            </div>
+            <p style={{ fontSize: 14, lineHeight: 1.6, color: 'var(--ink-2)', margin: 0 }}>
+              Binnen drie werkdagen. Voor urgente technische problemen proberen we dezelfde dag te reageren.
+            </p>
+          </div>
+
+          <div style={{ borderTop: '1px solid var(--line)', paddingTop: 24, marginTop: 24 }}>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
+              Sneller antwoord?
+            </div>
+            <p style={{ fontSize: 14, lineHeight: 1.6, color: 'var(--ink-2)', margin: 0 }}>
+              Tuiniersvragen beantwoordt Moos direct en gratis. <a href="/" style={{ color: 'var(--terracotta)', textDecoration: 'none', borderBottom: '1px solid var(--terracotta)' }}>Open de coach →</a>
+            </p>
+          </div>
+        </aside>
+      </div>
+
     </main>
   )
 }

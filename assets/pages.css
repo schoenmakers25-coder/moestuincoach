@@ -1224,4 +1224,8 @@
     grid-template-columns: 1fr !important;
     gap: 4px 0 !important;
   }
+  .contact-layout {
+    grid-template-columns: 1fr !important;
+    gap: 48px 0 !important;
+  }
 }
