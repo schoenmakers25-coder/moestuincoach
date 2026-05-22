@@ -68,7 +68,7 @@ export async function POST(request) {
 
   try {
     const resend = new Resend(process.env.RESEND_API_KEY)
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Moestuin.nl <noreply@moestuin.nl>',
       to: 'schoenmakers25@gmail.com',
       replyTo: emailClean,
@@ -82,6 +82,8 @@ export async function POST(request) {
       `,
       text: `Naam: ${naamClean}\nE-mail: ${emailClean}\n\nBericht:\n${berichtClean}`,
     })
+
+    if (error) throw error
 
     return Response.json({ ok: true })
   } catch (err) {
