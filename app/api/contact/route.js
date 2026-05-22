@@ -1,7 +1,5 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 // In-memory rate limiter: max 3 submissions per IP per minute
 const rateMap = new Map()
 const WINDOW = 60_000
@@ -69,6 +67,7 @@ export async function POST(request) {
   const berichtSafe = escapeHtml(berichtClean)
 
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY)
     await resend.emails.send({
       from: 'Moestuin.nl <noreply@moestuin.nl>',
       to: 'info@moestuin.nl',
