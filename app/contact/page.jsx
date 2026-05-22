@@ -27,17 +27,7 @@ export default function ContactPage() {
         <ContactForm />
 
         <aside style={{ paddingTop: 4 }}>
-          <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 16 }}>
-            Of stuur direct een mail
-          </div>
-          <a
-            href="mailto:info@moestuin.nl"
-            style={{ fontFamily: 'var(--font-display)', fontSize: 18, color: 'var(--terracotta)', textDecoration: 'none', borderBottom: '1px solid var(--terracotta)', paddingBottom: 2, display: 'inline-block', marginBottom: 32 }}
-          >
-            info@moestuin.nl
-          </a>
-
-          <div style={{ borderTop: '1px solid var(--line)', paddingTop: 24 }}>
+          <div style={{ borderTop: '1px solid var(--line)', paddingTop: 24, marginTop: 0 }}>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
               Reactietijd
             </div>

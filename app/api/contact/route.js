@@ -70,7 +70,7 @@ export async function POST(request) {
     const resend = new Resend(process.env.RESEND_API_KEY)
     await resend.emails.send({
       from: 'Moestuin.nl <noreply@moestuin.nl>',
-      to: 'info@moestuin.nl',
+      to: 'schoenmakers25@gmail.com',
       replyTo: emailClean,
       subject: `Contactformulier — ${naamSafe}`,
       html: `
@@ -87,7 +87,7 @@ export async function POST(request) {
   } catch (err) {
     console.error('[contact] Resend error:', err)
     return Response.json(
-      { error: 'Er ging iets mis bij het versturen. Mail ons direct op info@moestuin.nl.' },
+      { error: 'Er ging iets mis bij het versturen. Probeer het later opnieuw.' },
       { status: 500 }
     )
   }
