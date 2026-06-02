@@ -1,4 +1,4 @@
-import ContactForm from './ContactForm'
+import EmailLink from './EmailLink'
 
 export const metadata = {
   title: 'Contact',
@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <main style={{ maxWidth: 760, margin: '0 auto', padding: '60px 24px 100px' }}>
+    <main style={{ maxWidth: 640, margin: '0 auto', padding: '60px 24px 100px' }}>
 
       <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terracotta)', marginBottom: 16 }}>
         Contact
@@ -19,32 +19,40 @@ export default function ContactPage() {
         Stuur ons <span style={{ fontStyle: 'italic', color: 'var(--terracotta)' }}>een bericht.</span>
       </h1>
 
-      <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-2)', maxWidth: '52ch', marginBottom: 56, borderBottom: '1px solid var(--line)', paddingBottom: 40 }}>
+      <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-2)', maxWidth: '52ch', marginBottom: 48, borderBottom: '1px solid var(--line)', paddingBottom: 40 }}>
         Vraag, foutmelding of suggestie? We lezen alles en reageren doorgaans binnen drie werkdagen.
       </p>
 
-      <div className="contact-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 280px', gap: '0 64px', alignItems: 'start' }}>
-        <ContactForm />
+      <div style={{ marginBottom: 48 }}>
+        <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 16 }}>
+          Stuur een e-mail
+        </div>
+        <EmailLink
+          style={{
+            fontFamily: 'var(--font-display)',
+            fontSize: 28,
+            color: 'var(--terracotta)',
+            textDecoration: 'none',
+            borderBottom: '2px solid var(--terracotta)',
+            paddingBottom: 3,
+            display: 'inline-block',
+          }}
+        />
+        <p style={{ fontSize: 14, lineHeight: 1.6, color: 'var(--ink-2)', margin: '16px 0 0' }}>
+          We reageren doorgaans binnen drie werkdagen.
+        </p>
+      </div>
 
-        <aside style={{ paddingTop: 4 }}>
-          <div style={{ borderTop: '1px solid var(--line)', paddingTop: 24, marginTop: 0 }}>
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
-              Reactietijd
-            </div>
-            <p style={{ fontSize: 14, lineHeight: 1.6, color: 'var(--ink-2)', margin: 0 }}>
-              Binnen drie werkdagen. Voor urgente technische problemen proberen we dezelfde dag te reageren.
-            </p>
-          </div>
-
-          <div style={{ borderTop: '1px solid var(--line)', paddingTop: 24, marginTop: 24 }}>
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
-              Sneller antwoord?
-            </div>
-            <p style={{ fontSize: 14, lineHeight: 1.6, color: 'var(--ink-2)', margin: 0 }}>
-              Tuiniersvragen beantwoordt Moos direct en gratis. <a href="/" style={{ color: 'var(--terracotta)', textDecoration: 'none', borderBottom: '1px solid var(--terracotta)' }}>Open de coach →</a>
-            </p>
-          </div>
-        </aside>
+      <div style={{ borderTop: '1px solid var(--line)', paddingTop: 32 }}>
+        <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
+          Sneller antwoord?
+        </div>
+        <p style={{ fontSize: 14, lineHeight: 1.6, color: 'var(--ink-2)', margin: 0 }}>
+          Tuiniersvragen beantwoordt Moos direct en gratis.{' '}
+          <a href="/" style={{ color: 'var(--terracotta)', textDecoration: 'none', borderBottom: '1px solid var(--terracotta)' }}>
+            Open de coach →
+          </a>
+        </p>
       </div>
 
     </main>
