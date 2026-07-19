@@ -31,10 +31,9 @@ export default function SiteHeader() {
   useEffect(() => { setMenuOpen(false) }, [pathname])
 
   const NAV_LINKS = [
-    { href: '/',              label: 'Coach' },
+    { href: '/',             label: 'Home' },
     { href: '/zaaikalender', label: 'Zaaikalender' },
     { href: '/artikel',      label: 'Tuintips' },
-    { href: '/producten',    label: 'Producten' },
     { href: '/over',         label: 'Over' },
     { href: '/privacy',      label: 'Privacy' },
     { href: '/contact',      label: 'Contact' },
@@ -49,11 +48,11 @@ export default function SiteHeader() {
               <span>moestuin</span><span className="dot"></span><span className="tld">.nl</span>
             </Link>
             <nav className="site-nav">
-              <Link href="/"              className={pathname === '/'             ? 'active' : ''}>Coach</Link>
+              <Link href="/"             className={pathname === '/'             ? 'active' : ''}>Home</Link>
               <Link href="/zaaikalender" className={pathname === '/zaaikalender' ? 'active' : ''}>Zaaikalender</Link>
-              <Link href="/artikel"      className={pathname === '/artikel'      ? 'active' : ''}>Tuintips</Link>
-              <Link href="/producten"    className={pathname === '/producten'    ? 'active' : ''}>Producten</Link>
+              <Link href="/artikel"      className={pathname.startsWith('/artikel') ? 'active' : ''}>Tuintips</Link>
               <Link href="/over"         className={pathname === '/over'         ? 'active' : ''}>Over</Link>
+              <Link href="/contact"      className={pathname === '/contact'      ? 'active' : ''}>Contact</Link>
             </nav>
             <div className="header-right">
               <div className="header-meta">

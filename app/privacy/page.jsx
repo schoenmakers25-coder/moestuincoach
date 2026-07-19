@@ -16,21 +16,21 @@ export default function PrivacyPage() {
 
       <section style={{ lineHeight: 1.7, fontSize: 16 }}>
         <h2>Wie zijn wij?</h2>
-        <p>Moestuin.nl is een Nederlandse website die een gratis AI moestuincoach aanbiedt. Je kunt ons bereiken via <a href="mailto:info@moestuin.nl">info@moestuin.nl</a>.</p>
+        <p>Moestuin.nl is een Nederlandse website met een gratis zaaikalender en praktische tuiniersgidsen. Je kunt ons bereiken via <a href="mailto:info@moestuin.nl">info@moestuin.nl</a>.</p>
 
         <h2>Welke gegevens verwerken wij?</h2>
         <p>Moestuin.nl verwerkt zo min mogelijk persoonsgegevens. Wij verzamelen:</p>
         <ul>
-          <li><strong>Vragen die je stelt aan de coach</strong> — deze worden lokaal in je browser opgeslagen (localStorage) en niet gekoppeld aan een account of e-mailadres.</li>
+          <li><strong>Gegevens uit het contactformulier</strong> — als je ons via het contactformulier een bericht stuurt, verwerken wij je naam, e-mailadres en bericht. Deze gegevens gebruiken wij uitsluitend om je vraag te beantwoorden en bewaren wij niet langer dan nodig.</li>
           <li><strong>Anonieme bezoekersdata</strong> — via standaard server-logging (IP-adres, bezochte pagina&apos;s, tijdstip). Wij gebruiken deze gegevens uitsluitend voor technisch beheer.</li>
         </ul>
         <p>Wij maken geen gebruik van tracking-cookies of advertentietrackers van derden.</p>
 
-        <h2>AI-vragen en Anthropic</h2>
-        <p>De vragen die je stelt aan Moos worden doorgestuurd naar de API van Anthropic (de maker van Claude). Anthropic heeft een eigen privacybeleid. Stuur geen gevoelige persoonlijke informatie mee in je vraag.</p>
+        <h2>Verzenden van e-mail</h2>
+        <p>Een bericht via het contactformulier wordt afgeleverd via de transactionele mailservice Resend. Zij verwerken de inhoud van je bericht uitsluitend om het bij ons af te leveren.</p>
 
         <h2>Hoe lang bewaren wij je gegevens?</h2>
-        <p>Vragen worden uitsluitend in jouw eigen browser bewaard en worden niet door ons opgeslagen op een server. Je kunt de browserdata op elk moment wissen via de instellingen van je browser.</p>
+        <p>Berichten uit het contactformulier bewaren wij niet langer dan nodig om je vraag te beantwoorden. Wij slaan geen persoonsgegevens op in een database die aan jou gekoppeld is.</p>
 
         <h2>Jouw rechten</h2>
         <p>Op grond van de AVG heb je het recht op inzage, correctie en verwijdering van je persoonsgegevens. Omdat wij geen persoonsgegevens opslaan die aan jou gekoppeld zijn, is er in de praktijk niets te inzien of verwijderen. Bij vragen kun je contact opnemen via <a href="mailto:info@moestuin.nl">info@moestuin.nl</a>.</p>
