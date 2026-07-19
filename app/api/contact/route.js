@@ -69,7 +69,7 @@ export async function POST(request) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY)
     const { error } = await resend.emails.send({
-      from: 'Moestuin.nl <noreply@moestuin.nl>',
+      from: process.env.RESEND_FROM || 'Moestuin.nl <onboarding@resend.dev>',
       to: 'schoenmakers25@gmail.com',
       replyTo: emailClean,
       subject: `Contactformulier — ${naamSafe}`,
