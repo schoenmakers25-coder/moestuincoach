@@ -1,5 +1,5 @@
 ---
-title: 'Moestuin Mulchen Tegen Droogte: Bodem Beschermen Bij Hitte'
+title: 'Moestuin mulchen tegen droogte: bodem beschermen bij hitte'
 slug: moestuin-mulchen-tegen-droogte
 date: '2026-07-19'
 description: >-
