@@ -52,9 +52,8 @@ export default function OverPage() {
       </h1>
 
       <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-2)', maxWidth: '58ch', marginBottom: 40 }}>
-        Achter deze site zit geen redactieburo, maar een echte plek: een oude hoeve in glooiend heuvelland,
-        met een moestuin en een kas die we stap voor stap weer tot leven brengen. Alles wat je hier leest,
-        komt voort uit wat er op dat stukje grond gebeurt.
+        Moestuin.nl hoort bij Hoeve 1700: een oude hoeve in glooiend heuvelland, met een moestuin en een kas
+        die we stap voor stap opknappen. Wat we onderweg leren over zaaien, oogsten en de seizoenen, delen we op de site.
       </p>
 
       <Figure

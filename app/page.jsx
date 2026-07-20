@@ -193,10 +193,10 @@ export default function Page() {
               Van de hoeve
             </div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.05, marginBottom: 10 }}>
-              Echte moestuin, echte kas. <span style={{ fontStyle: 'italic' }}>Hoeve 1700.</span>
+              De moestuin en kas van <span style={{ fontStyle: 'italic' }}>Hoeve 1700.</span>
             </div>
             <div style={{ fontSize: 15, lineHeight: 1.5, color: 'rgba(244,239,228,.82)' }}>
-              Alles op deze site komt voort uit één oude hoeve waar we de moestuin en kas weer tot leven brengen.{' '}
+              De plek achter Moestuin.nl — een oude hoeve waar we de moestuin en kas weer opknappen.{' '}
               <span style={{ borderBottom: '1px solid rgba(244,239,228,.5)' }}>Lees het verhaal →</span>
             </div>
           </div>
