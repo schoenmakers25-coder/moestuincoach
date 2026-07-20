@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import {
   SITE_URL,
+  SITE_AUTHOR,
   getArticleBySlug,
   getMarkdownArticles,
   getAllArticles,
@@ -68,7 +69,12 @@ export default function ArtikelPage({ params }) {
     datePublished: article.date,
     dateModified: article.dateModified || article.date,
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-    author: { '@type': 'Organization', name: article.author || 'Moestuin.nl', url: SITE_URL },
+    author: {
+      '@type': 'Person',
+      name: SITE_AUTHOR.name,
+      jobTitle: SITE_AUTHOR.jobTitle,
+      url: `${SITE_URL}/over`,
+    },
     publisher: { '@type': 'Organization', name: 'Moestuin.nl', url: SITE_URL },
     inLanguage: 'nl-NL',
     keywords: (article.tags || []).join(', '),

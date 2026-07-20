@@ -173,6 +173,36 @@ export default function Page() {
         </section>
       )}
 
+      {/* Hoeve 1700 — merkstrip */}
+      <section className="wrap" style={{ padding: '8px 0 4px' }}>
+        <Link
+          href="/over"
+          aria-label="Over Hoeve 1700, de plek achter Moestuin.nl"
+          style={{ position: 'relative', display: 'block', width: '100%', aspectRatio: '16 / 7', minHeight: 220, borderRadius: 6, overflow: 'hidden', textDecoration: 'none' }}
+        >
+          <Image
+            src="/hoeve/hoeve1700.jpg"
+            alt="Hoeve 1700 vanuit de lucht, met moestuin en boomgaard in glooiend heuvelland"
+            fill
+            sizes="(max-width: 1040px) 100vw, 1000px"
+            style={{ objectFit: 'cover' }}
+          />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(20,28,20,.74) 0%, rgba(20,28,20,.38) 46%, rgba(20,28,20,0) 76%)' }} />
+          <div style={{ position: 'absolute', left: 0, bottom: 0, padding: 'clamp(20px, 4vw, 40px)', maxWidth: 620, color: 'var(--paper)' }}>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(244,239,228,.75)', marginBottom: 10 }}>
+              Van de hoeve
+            </div>
+            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.05, marginBottom: 10 }}>
+              Echte moestuin, echte kas. <span style={{ fontStyle: 'italic' }}>Hoeve 1700.</span>
+            </div>
+            <div style={{ fontSize: 15, lineHeight: 1.5, color: 'rgba(244,239,228,.82)' }}>
+              Alles op deze site komt voort uit één oude hoeve waar we de moestuin en kas weer tot leven brengen.{' '}
+              <span style={{ borderBottom: '1px solid rgba(244,239,228,.5)' }}>Lees het verhaal →</span>
+            </div>
+          </div>
+        </Link>
+      </section>
+
       {/* Zaaikalender-band */}
       <section className="tool-band">
         <div className="wrap">
@@ -194,8 +224,8 @@ export default function Page() {
             </div>
             <div className="tool-band__media">
               <Image
-                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=1000&fit=crop&auto=format&q=75"
-                alt="Moestuin met verse groenten in volle grond"
+                src="/hoeve/bakken.jpg"
+                alt="Moestuinbakken met verse, donkere aarde op Hoeve 1700"
                 fill
                 sizes="(max-width: 860px) 100vw, 50vw"
               />
