@@ -5,22 +5,22 @@ import { getAllArticles, formatDateShort, SITE_URL } from '@/lib/articles'
 export const revalidate = 3600
 
 export const metadata = {
-  title: 'Moestuin.nl — zaaikalender, tuintips en moestuingidsen',
+  title: 'Moestuin.nl — wekelijkse tuintips en de Nederlandse zaaikalender',
   description:
-    'Praktische hulp voor je moestuin: de complete Nederlandse zaaikalender met 36 gewassen, plus gidsen over zaaien, uitplanten, plagen en oogsten. Gratis, geen account.',
+    'Elke week een nieuwe, praktische moestuingids over wat er nú in de tuin speelt — plus de complete Nederlandse zaaikalender met 36 gewassen. Gratis, geen account.',
   robots: { index: true, follow: true },
   alternates: { canonical: `${SITE_URL}/` },
   openGraph: {
     type: 'website',
     url: `${SITE_URL}/`,
-    title: 'Moestuin.nl — zaaikalender en tuintips voor de Nederlandse moestuin',
-    description: 'De complete zaaikalender en praktische moestuingidsen. Gratis, geen account nodig.',
+    title: 'Moestuin.nl — wekelijkse tuintips en de Nederlandse zaaikalender',
+    description: 'Elke week een nieuwe moestuingids plus de complete zaaikalender. Gratis, geen account nodig.',
     locale: 'nl_NL',
   },
   twitter: {
     card: 'summary',
-    title: 'Moestuin.nl — zaaikalender en tuintips',
-    description: 'De complete zaaikalender en praktische moestuingidsen voor Nederlandse tuiniers.',
+    title: 'Moestuin.nl — wekelijkse tuintips en zaaikalender',
+    description: 'Elke week een nieuwe moestuingids plus de complete Nederlandse zaaikalender.',
   },
 }
 
@@ -32,7 +32,7 @@ const jsonLd = {
       '@id': `${SITE_URL}/#website`,
       name: 'Moestuin.nl',
       url: SITE_URL,
-      description: 'Zaaikalender, tuintips en moestuingidsen voor Nederlandse moestuiniers',
+      description: 'Wekelijkse tuintips, zaaikalender en moestuingidsen voor Nederlandse moestuiniers',
       inLanguage: 'nl-NL',
     },
     {
@@ -76,209 +76,96 @@ const jsonLd = {
 export default function Page() {
   const articles = getAllArticles()
   const featured = articles[0]
-  const recent = articles.slice(1, 5)
+  const stream = articles.slice(1, 7)
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="hero-section">
-        <div className="wrap">
-          <div className="hero-editorial">
-            <div className="kicker-row">
-              <span className="kicker">Nederlandse moestuingids</span>
-              <span className="meta">Gratis · geen account</span>
-            </div>
-            <h1>
-              Wat zaai je <span className="it">nu?</span>
-            </h1>
-            <div className="lower">
-              <p className="lead">
-                <span className="drop">D</span>e zaaikalender voor de Nederlandse moestuin, plus praktische gidsen over
-                zaaien, uitplanten, plagen en oogsten. Geschreven voor wie z&apos;n handen vies wil maken.
-              </p>
-              <div className="stats">
-                <div className="stat">
-                  <div className="num">36</div>
-                  <div className="lbl">gewassen in de kalender</div>
-                </div>
-                <div className="stat">
-                  <div className="num">{articles.length}</div>
-                  <div className="lbl">gidsen en artikelen</div>
-                </div>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <Link
-                  href="/zaaikalender"
-                  style={{
-                    display: 'inline-block',
-                    background: 'var(--forest)',
-                    color: 'var(--paper)',
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: 12,
-                    letterSpacing: '.12em',
-                    textTransform: 'uppercase',
-                    padding: '14px 24px',
-                    textDecoration: 'none',
-                    textAlign: 'center',
-                  }}
-                >
-                  Naar de zaaikalender →
-                </Link>
-                <Link
-                  href="/artikel"
-                  style={{
-                    display: 'inline-block',
-                    border: '1px solid var(--ink)',
-                    color: 'var(--ink)',
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: 12,
-                    letterSpacing: '.12em',
-                    textTransform: 'uppercase',
-                    padding: '13px 24px',
-                    textDecoration: 'none',
-                    textAlign: 'center',
-                  }}
-                >
-                  Alle tuintips
-                </Link>
-              </div>
-            </div>
-          </div>
+      {/* Ribbon */}
+      <div className="wrap">
+        <div className="home-ribbon">
+          <span><span className="accent">Elke week een nieuwe gids</span> — voor de Nederlandse moestuin</span>
+          <span>Gratis · geen account</span>
         </div>
-      </section>
+      </div>
 
-      <section className="site-intro">
-        <div className="wrap">
-          <div className="site-intro-grid">
-            <Link href="/zaaikalender" className="site-intro-card">
-              <div className="site-intro-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-              </div>
-              <div className="site-intro-label">Zaaikalender</div>
-              <div className="site-intro-desc">
-                36 groenten en kruiden — per maand zien wat je zaait, plant en oogst.
-              </div>
-            </Link>
-            <Link href="/artikel" className="site-intro-card">
-              <div className="site-intro-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                </svg>
-              </div>
-              <div className="site-intro-label">Tuintips &amp; gidsen</div>
-              <div className="site-intro-desc">
-                Praktische artikelen over zaaien, verzorgen en oogsten, voor elk niveau.
-              </div>
-            </Link>
-            <Link href="/over" className="site-intro-card">
-              <div className="site-intro-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 2a10 10 0 1 0 10 10" /><path d="M12 22a10 10 0 0 0 10-10" /><line x1="12" y1="12" x2="12" y2="7" />
-                </svg>
-              </div>
-              <div className="site-intro-label">Over Moestuin.nl</div>
-              <div className="site-intro-desc">
-                Wie we zijn, hoe we werken en waarom alles op deze site gratis is.
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
+      {/* Hero: nieuwste artikel */}
       {featured && (
-        <section style={{ padding: '72px 0', borderBottom: '1px solid var(--line)' }}>
+        <section className="home-hero">
           <div className="wrap">
-            <div className="section-head" style={{ marginBottom: 32 }}>
-              <span className="kicker">Nieuwste gids</span>
-              <h2>
-                Deze week op <span className="it">de site.</span>
-              </h2>
-            </div>
-            <Link
-              href={`/artikel/${featured.slug}`}
-              style={{ display: 'grid', gap: 24, textDecoration: 'none', color: 'var(--ink)' }}
-            >
-              {featured.image?.url && (
-                <Image
-                  src={featured.image.url}
-                  alt={featured.image.alt || featured.title}
-                  width={1200}
-                  height={675}
-                  priority
-                  sizes="(max-width: 900px) 100vw, 1100px"
-                  style={{ width: '100%', height: 'auto', maxHeight: 420, objectFit: 'cover' }}
-                />
-              )}
-              <div>
-                <div
-                  style={{
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: 10,
-                    letterSpacing: '0.14em',
-                    textTransform: 'uppercase',
-                    color: 'var(--terracotta)',
-                    marginBottom: 10,
-                  }}
-                >
-                  {featured.tag} · {featured.readingMinutes} min · {formatDateShort(featured.date)}
+            <div className="home-hero__inner">
+              <Link href={`/artikel/${featured.slug}`} className="home-hero__media" aria-label={featured.title}>
+                <span className="home-hero__badge">Nieuw deze week</span>
+                {featured.image?.url && (
+                  <Image
+                    src={featured.image.url}
+                    alt={featured.image.alt || featured.title}
+                    fill
+                    priority
+                    sizes="(max-width: 860px) 100vw, 55vw"
+                  />
+                )}
+              </Link>
+              <div className="home-hero__body">
+                <div className="home-hero__meta">
+                  {featured.tag} <span className="dim">· {featured.readingMinutes} min lezen · {formatDateShort(featured.date)}</span>
                 </div>
-                <h3
-                  style={{
-                    fontFamily: 'var(--font-display)',
-                    fontSize: 'clamp(28px, 4vw, 44px)',
-                    lineHeight: 1.05,
-                    margin: '0 0 12px',
-                  }}
-                >
-                  {featured.title}
-                  {featured.titleIt && (
-                    <span style={{ fontStyle: 'italic', color: 'var(--forest)' }}> {featured.titleIt}</span>
-                  )}
-                </h3>
-                <p style={{ fontSize: 18, lineHeight: 1.6, color: 'var(--ink-2)', margin: 0, maxWidth: '62ch' }}>
-                  {featured.excerpt}
-                </p>
+                <h1 className="home-hero__title">
+                  <Link href={`/artikel/${featured.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    {featured.title}
+                    {featured.titleIt && <span className="it"> {featured.titleIt}</span>}
+                  </Link>
+                </h1>
+                <p className="home-hero__excerpt">{featured.excerpt}</p>
+                <div className="home-cta-row">
+                  <Link href={`/artikel/${featured.slug}`} className="btn">
+                    Lees het artikel <span className="arrow">→</span>
+                  </Link>
+                  <Link href="/artikel" className="btn btn-outline">
+                    Alle tuintips
+                  </Link>
+                </div>
               </div>
-            </Link>
+            </div>
           </div>
         </section>
       )}
 
-      {recent.length > 0 && (
-        <section style={{ padding: '72px 0', background: 'var(--paper-2)', borderBottom: '1px solid var(--line)' }}>
+      {/* Artikelstroom */}
+      {stream.length > 0 && (
+        <section className="stream">
           <div className="wrap">
-            <div className="section-head" style={{ marginBottom: 32 }}>
+            <div className="section-head" style={{ marginBottom: 8 }}>
+              <span className="kicker">De tuintips</span>
               <h2>
-                Meer <span className="it">gidsen.</span>
+                Vers uit de <span className="it">moestuin.</span>
               </h2>
               <Link className="link" href="/artikel">
-                Alles bekijken →
+                Alle tuintips →
               </Link>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 28 }}>
-              {recent.map(item => (
-                <Link
-                  key={item.slug}
-                  href={`/artikel/${item.slug}`}
-                  style={{ textDecoration: 'none', color: 'var(--ink)', borderTop: '1px solid var(--ink)', paddingTop: 14 }}
-                >
-                  <div
-                    style={{
-                      fontFamily: 'var(--font-mono)',
-                      fontSize: 10,
-                      letterSpacing: '0.12em',
-                      textTransform: 'uppercase',
-                      color: 'var(--terracotta)',
-                      marginBottom: 8,
-                    }}
-                  >
-                    {item.tag} · {formatDateShort(item.date)}
+            <div className="stream__grid">
+              {stream.map(item => (
+                <Link key={item.slug} href={`/artikel/${item.slug}`} className="post">
+                  <div className="post__media">
+                    {item.image?.url && (
+                      <Image
+                        src={item.image.url}
+                        alt={item.image.alt || item.title}
+                        fill
+                        sizes="(max-width: 860px) 100vw, (max-width: 1040px) 50vw, 33vw"
+                      />
+                    )}
                   </div>
-                  <div style={{ fontFamily: 'var(--font-display)', fontSize: 22, lineHeight: 1.12 }}>{item.title}</div>
-                  <p style={{ fontSize: 15, lineHeight: 1.55, color: 'var(--ink-2)', margin: '8px 0 0' }}>{item.excerpt}</p>
+                  <div className="post__meta">
+                    {item.tag} <span className="dim">· {formatDateShort(item.date)}</span>
+                  </div>
+                  <h3 className="post__title">
+                    {item.title}
+                    {item.titleIt && <span style={{ fontStyle: 'italic', color: 'var(--forest)' }}> {item.titleIt}</span>}
+                  </h3>
+                  <p className="post__excerpt">{item.excerpt}</p>
                 </Link>
               ))}
             </div>
@@ -286,37 +173,69 @@ export default function Page() {
         </section>
       )}
 
+      {/* Zaaikalender-band */}
+      <section className="tool-band">
+        <div className="wrap">
+          <div className="tool-band__inner">
+            <div className="tool-band__body">
+              <div className="tool-band__kicker">De tool · 36 gewassen</div>
+              <h2 className="tool-band__title">
+                Wat zaai, plant en oogst je <span className="it">deze maand?</span>
+              </h2>
+              <p className="tool-band__text">
+                De complete Nederlandse zaaikalender laat per maand precies zien wat er kan — binnen én buiten.
+                Handig naast de wekelijkse tuintips: eerst kijken wat er nu kan, dan de gids erbij lezen.
+              </p>
+              <div className="home-cta-row">
+                <Link href="/zaaikalender" className="btn btn-light">
+                  Open de zaaikalender <span className="arrow">→</span>
+                </Link>
+              </div>
+            </div>
+            <div className="tool-band__media">
+              <Image
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=1000&fit=crop&auto=format&q=75"
+                alt="Moestuin met verse groenten in volle grond"
+                fill
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hoe je de site gebruikt */}
       <section className="how">
         <div className="wrap">
           <div className="section-head" style={{ borderBottomColor: 'var(--ink)', marginBottom: 40 }}>
+            <span className="kicker">Zo werkt het</span>
             <h2>
-              Hoe je deze site <span className="it">gebruikt.</span>
+              Elke week iets nieuws <span className="it">om te doen.</span>
             </h2>
-            <p className="intro">Drie dingen om te weten voor je aan de slag gaat.</p>
           </div>
           <div className="grid">
             <div className="step">
               <div className="num">01</div>
-              <h3>Kijk eerst wat er deze maand kan.</h3>
+              <h3>Elke week een verse gids.</h3>
+              <p>
+                We publiceren wekelijks een nieuw <Link href="/artikel">artikel</Link> over wat er op dat moment in de
+                Nederlandse moestuin speelt — actueel, praktisch en getest in de praktijk.
+              </p>
+            </div>
+            <div className="step">
+              <div className="num">02</div>
+              <h3>Kijk wat er deze maand kan.</h3>
               <p>
                 De <Link href="/zaaikalender">zaaikalender</Link> laat per maand zien welke van de 36 gewassen je zaait,
                 plant of oogst — binnen én buiten.
               </p>
             </div>
             <div className="step">
-              <div className="num">02</div>
-              <h3>Lees de gids bij je gewas.</h3>
-              <p>
-                Elke <Link href="/artikel">tuintip</Link> is een stappenplan: wanneer, hoe diep, welke fouten je moet
-                vermijden. Getest in de praktijk, geen theorie.
-              </p>
-            </div>
-            <div className="step">
               <div className="num">03</div>
-              <h3>Elke week komt er een gids bij.</h3>
+              <h3>Geen account, geen gedoe.</h3>
               <p>
-                We publiceren wekelijks een nieuw artikel over wat er op dat moment in de Nederlandse moestuin speelt.
-                Geen account, geen nieuwsbrief nodig.
+                Alles op deze site is gratis en zonder inloggen te lezen. Geen nieuwsbrief nodig — kom gewoon elke week
+                even langs voor de nieuwste <Link href="/artikel">tuintip</Link>.
               </p>
             </div>
           </div>

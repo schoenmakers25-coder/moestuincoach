@@ -73,9 +73,9 @@ a { color: inherit; }
   letter-spacing: -0.01em;
   line-height: 1;
 }
-h1.hero  { font-size: clamp(56px, 9vw, 156px); }
-h2.section-h { font-size: clamp(36px, 4.4vw, 64px); line-height: 1.02; }
-h3.card-h    { font-size: 30px; line-height: 1.05; }
+h1.hero  { font-size: clamp(40px, 6vw, 80px); }
+h2.section-h { font-size: clamp(26px, 3.2vw, 42px); line-height: 1.05; }
+h3.card-h    { font-size: 25px; line-height: 1.08; }
 
 .italic { font-style: italic; }
 

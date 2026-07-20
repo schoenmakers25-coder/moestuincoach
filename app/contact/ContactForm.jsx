@@ -48,7 +48,7 @@ function Field({ label, error, children }) {
 }
 
 export default function ContactForm() {
-  const [form, setForm] = useState({ naam: '', email: '', bericht: '' })
+  const [form, setForm] = useState({ naam: '', email: '', bericht: '', honeypot: '' })
   const [errors, setErrors] = useState({})
   const [focus, setFocus] = useState(null)
   const [status, setStatus] = useState('idle') // idle | sending | success | error
@@ -82,7 +82,7 @@ export default function ContactForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, honeypot: '' }),
+        body: JSON.stringify(form),
       })
       const data = await res.json()
       if (!res.ok || !data.ok) {
@@ -107,7 +107,7 @@ export default function ContactForm() {
           Bedankt! We reageren doorgaans binnen drie werkdagen op het e-mailadres dat je hebt opgegeven.
         </p>
         <button
-          onClick={() => { setForm({ naam: '', email: '', bericht: '' }); setStatus('idle') }}
+          onClick={() => { setForm({ naam: '', email: '', bericht: '', honeypot: '' }); setStatus('idle') }}
           style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', background: 'none', border: '1px solid var(--line)', padding: '10px 16px', cursor: 'pointer', color: 'var(--ink)' }}
         >
           Nog een bericht sturen
@@ -120,15 +120,22 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate>
-      {/* Honeypot: verborgen voor gebruikers, gevuld door bots */}
-      <input
-        type="text"
-        name="website"
-        autoComplete="off"
-        tabIndex={-1}
-        style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }}
-        onChange={() => {}}
-      />
+      {/* Honeypot: verborgen voor gebruikers, gevuld door bots. Nu écht
+          aangesloten op de state, zodat de server ingevulde waarden ziet
+          en het bericht als spam weigert. */}
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}>
+        <label>
+          Vul dit veld niet in
+          <input
+            type="text"
+            name="website"
+            tabIndex={-1}
+            autoComplete="off"
+            value={form.honeypot}
+            onChange={set('honeypot')}
+          />
+        </label>
+      </div>
 
       <Field label="Naam" error={errors.naam}>
         <input

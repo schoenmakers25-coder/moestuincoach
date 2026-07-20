@@ -4,6 +4,7 @@ import '../assets/pages.css'
 import '../assets/home.css'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
+import CookieNotice from '@/components/CookieNotice'
 import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
           {children}
           <SiteFooter />
         </div>
+        <CookieNotice />
         <Analytics />
       </body>
     </html>

@@ -58,7 +58,7 @@
 .how .step .num {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 64px;
+  font-size: 44px;
   line-height: 1;
   color: var(--terracotta);
   border-bottom: 1px solid var(--ink);
@@ -69,8 +69,8 @@
 .how .step:nth-child(3) .num { color: var(--sun); }
 .how .step h3 {
   font-family: var(--font-display);
-  font-size: 28px;
-  line-height: 1.05;
+  font-size: 23px;
+  line-height: 1.1;
   margin: 0 0 10px;
   letter-spacing: -0.005em;
 }
@@ -83,4 +83,179 @@
 @media (max-width: 600px) {
   .site-intro-grid { grid-template-columns: 1fr; }
   .site-intro-card { border-right: none; border-bottom: 1px solid var(--line); }
+}
+
+/* =====================================================================
+   Homepage 2.0 — artikel-gedreven. De wekelijkse artikelen zijn de
+   hoofdzaak; de zaaikalender is de belangrijkste tool eronder.
+   ===================================================================== */
+
+/* ----- Ribbon boven de hero ----- */
+.home-ribbon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.home-ribbon .accent { color: var(--terracotta); font-weight: 500; }
+
+/* ----- Hero: nieuwste artikel, foto-gedreven ----- */
+.home-hero { border-bottom: 1px solid var(--ink); background: var(--paper); }
+.home-hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+  padding: 52px 0 56px;
+}
+.home-hero__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  background: var(--paper-2);
+}
+.home-hero__media img { object-fit: cover; }
+.home-hero__badge {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 2;
+  background: var(--terracotta);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+}
+.home-hero__meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-bottom: 16px;
+}
+.home-hero__meta .dim { color: var(--muted); }
+.home-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4.4vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  margin: 0 0 18px;
+}
+.home-hero__title .it { font-style: italic; color: var(--forest); }
+.home-hero__excerpt {
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink-2);
+  max-width: 46ch;
+  margin: 0 0 28px;
+}
+.home-cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+/* ----- Artikelstroom (recente tuintips met foto) ----- */
+.stream { padding: 72px 0; border-bottom: 1px solid var(--line); }
+.stream__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 36px;
+  margin-top: 8px;
+}
+.post { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); }
+.post__media {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  background: var(--paper-2);
+  margin-bottom: 16px;
+}
+.post__media img { object-fit: cover; transition: transform .45s ease; }
+.post:hover .post__media img { transform: scale(1.035); }
+.post__meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-bottom: 9px;
+}
+.post__meta .dim { color: var(--muted); }
+.post__title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1.12;
+  letter-spacing: -0.005em;
+  margin: 0 0 8px;
+}
+.post:hover .post__title { color: var(--forest); }
+.post__excerpt { font-size: 15px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+
+/* ----- Zaaikalender-band (belangrijkste tool, onder de artikelen) ----- */
+.tool-band { background: var(--forest); color: var(--paper); border-bottom: 1px solid var(--ink); }
+.tool-band__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: stretch;
+}
+.tool-band__body { padding: 68px 0; align-self: center; }
+.tool-band__kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e8c896;
+  margin-bottom: 16px;
+}
+.tool-band__title {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 3.6vw, 46px);
+  line-height: 1.02;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+.tool-band__title .it { font-style: italic; color: #e8c896; }
+.tool-band__text {
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(244, 239, 228, 0.85);
+  max-width: 44ch;
+  margin: 0 0 26px;
+}
+.tool-band__media {
+  position: relative;
+  min-height: 340px;
+  overflow: hidden;
+  border-left: 1px solid rgba(244, 239, 228, 0.22);
+}
+.tool-band__media img { object-fit: cover; }
+
+/* Lichte knop voor op de donkere band */
+.btn-light { background: var(--paper); color: var(--forest); border-color: var(--paper); }
+.btn-light:hover { background: var(--terracotta); border-color: var(--terracotta); color: var(--paper); }
+
+/* ----- Responsive ----- */
+@media (max-width: 860px) {
+  .home-hero__inner { grid-template-columns: 1fr; gap: 26px; padding: 28px 0 36px; }
+  .home-hero__media { aspect-ratio: 16 / 10; }
+  .stream__grid { grid-template-columns: 1fr; gap: 32px; }
+  .tool-band__inner { grid-template-columns: 1fr; gap: 0; }
+  .tool-band__body { padding: 44px 0 38px; }
+  .tool-band__media {
+    min-height: 240px;
+    border-left: 0;
+    border-top: 1px solid rgba(244, 239, 228, 0.22);
+  }
+}
+@media (min-width: 861px) and (max-width: 1040px) {
+  .stream__grid { grid-template-columns: repeat(2, 1fr); }
 }

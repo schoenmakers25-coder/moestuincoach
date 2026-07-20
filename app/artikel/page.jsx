@@ -50,7 +50,7 @@ export default function ArtikelOverzichtPage() {
           <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terracotta)', marginBottom: 14 }}>
             Gidsen &amp; artikelen
           </div>
-          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 6vw, 64px)', lineHeight: 1.0, letterSpacing: '-0.01em', marginBottom: 20 }}>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 52px)', lineHeight: 1.02, letterSpacing: '-0.01em', marginBottom: 20 }}>
             Tuintips voor <span style={{ fontStyle: 'italic' }}>de moestuinier.</span>
           </h1>
           <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-2)', maxWidth: '60ch', marginBottom: 40 }}>
