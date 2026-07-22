@@ -165,7 +165,7 @@ export default function ContactForm() {
         />
       </Field>
 
-      <Field label={`Bericht — ${charsLeft} tekens over`} error={errors.bericht}>
+      <Field label={`Bericht: ${charsLeft} tekens over`} error={errors.bericht}>
         <textarea
           value={form.bericht}
           onChange={set('bericht')}

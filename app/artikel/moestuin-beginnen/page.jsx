@@ -54,7 +54,7 @@ const jsonLdFaq = {
     {
       '@type': 'Question',
       name: 'Moet ik de grond omspaten voor een moestuin?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Eenmalig omspaten bij het aanleggen is nuttig om stenen en wortels te verwijderen en compost in te werken. Daarna is het beter om de grond zo min mogelijk te verstoren — de bodemstructuur en bodemleven worden daar beter van.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Eenmalig omspaten bij het aanleggen is nuttig om stenen en wortels te verwijderen en compost in te werken. Daarna is het beter om de grond zo min mogelijk te verstoren: de bodemstructuur en bodemleven worden daar beter van.' },
     },
   ],
 }
@@ -145,13 +145,13 @@ export default function MoestuinBeginnersPage() {
             </aside>
 
             <article className="prose">
-              <p>Ieder jaar beginnen tienduizenden Nederlanders aan hun eerste moestuin. De helft geeft het op voor de zomer voorbij is. Niet omdat tuinieren moeilijk is — maar omdat ze te groot beginnen, de verkeerde plek kiezen of groenten kweken die te veel aandacht vragen. Dit gaat over hoe je het anders doet.</p>
+              <p>Ieder jaar beginnen tienduizenden Nederlanders aan hun eerste moestuin. De helft geeft het op voor de zomer voorbij is. Niet omdat tuinieren moeilijk is, maar omdat ze te groot beginnen, de verkeerde plek kiezen of groenten kweken die te veel aandacht vragen. Dit gaat over hoe je het anders doet.</p>
 
               <h2 id="plek"><span className="num">Stap 01</span>De juiste plek kiezen: zon is alles</h2>
-              <p>De locatie van je moestuin is de beslissing die alles bepaalt. Je kunt de beste zaden kopen, de rijkste grond aanleggen en zorgvuldig water geven — maar als de plek niet goed is, mislukt het toch. Het belangrijkste criterium is zon.</p>
+              <p>De locatie van je moestuin is de beslissing die alles bepaalt. Je kunt de beste zaden kopen, de rijkste grond aanleggen en zorgvuldig water geven, maar als de plek niet goed is, mislukt het toch. Het belangrijkste criterium is zon.</p>
               <p>De meeste groenten hebben minimaal <b>zes uur directe zon per dag</b> nodig. Tomaten, paprika, courgette en komkommer willen liefst acht uur of meer. Bladgroenten als sla, spinazie en kropsla redden het met vier uur, maar groeien in volle zomer juist beter met wat middag­schaduw.</p>
 
-              <blockquote>Loop een dag langs je tuin en noteer hoe lang de zon op elke plek staat. Doe dit in mei of juni — niet in de winter, want de zonhoek is dan compleet anders.</blockquote>
+              <blockquote>Loop een dag langs je tuin en noteer hoe lang de zon op elke plek staat. Doe dit in mei of juni, niet in de winter, want de zonhoek is dan compleet anders.</blockquote>
 
               <p>Andere aandachtspunten voor de plek:</p>
               <ul>
@@ -165,11 +165,11 @@ export default function MoestuinBeginnersPage() {
               <p>Dit is waar de meeste beginners de mist ingaan: ze beginnen te groot. Een moestuin van twintig vierkante meter ziet er in april heerlijk overzichtelijk uit. In juli is het een onkruidjungle die elke avond twee uur werk vraagt.</p>
 
               <div className="pull">
-                <div className="big">4–6 m²</div>
-                <div className="txt">is de ideale oppervlakte voor een eerste moestuin. Dat zijn twee tot drie bedden van 120 × 80 cm — genoeg om te leren, genoeg om te oogsten.</div>
+                <div className="big">4 tot 6 m²</div>
+                <div className="txt">is de ideale oppervlakte voor een eerste moestuin. Dat zijn twee tot drie bedden van 120 × 80 cm, genoeg om te leren, genoeg om te oogsten.</div>
               </div>
 
-              <p>Begin met twee of drie compacte bedden. Een bed van 120 bij 80 centimeter is handig omdat je er aan alle kanten bij kunt zonder de grond in te lopen. Na één seizoen weet je hoeveel tijd en energie je er echt in wilt steken — en dan kun je altijd uitbreiden.</p>
+              <p>Begin met twee of drie compacte bedden. Een bed van 120 bij 80 centimeter is handig omdat je er aan alle kanten bij kunt zonder de grond in te lopen. Na één seizoen weet je hoeveel tijd en energie je er echt in wilt steken, en dan kun je altijd uitbreiden.</p>
 
               <h2 id="groenten"><span className="num">Stap 03</span>Welke groenten voor beginners</h2>
               <p>Niet alle groenten zijn even vergevingsgezind. Begin met gewassen die snel resultaat geven, weinig aandacht vragen en moeilijk te verpesten zijn. Dat motiveert om door te gaan.</p>
@@ -185,31 +185,31 @@ export default function MoestuinBeginnersPage() {
               </ul>
 
               <h3>Eén ambitieuze groente: de tomaat</h3>
-              <p>Bijna elke beginner wil tomaten. Dat begrijpen we. Tomaten zijn heerlijk en de voldoening van je eerste zelfgekweekte tomaat is ongeëvenaard. Maar ze vragen meer: afharden, dieven uitbreken, water­beheer, steun. Neem er één of twee planten bij als experiment naast je makkelijke gewassen — niet als je hoofdgewas.</p>
+              <p>Bijna elke beginner wil tomaten. Dat begrijpen we. Tomaten zijn heerlijk en de voldoening van je eerste zelfgekweekte tomaat is ongeëvenaard. Maar ze vragen meer: afharden, dieven uitbreken, water­beheer, steun. Neem er één of twee planten bij als experiment naast je makkelijke gewassen, niet als je hoofdgewas.</p>
 
               <h2 id="grond"><span className="num">Stap 04</span>De grond voorbereiden</h2>
               <p>Goede grond is de basis van alles. De meeste beginners schieten hier tekort: ze graven wat om, gooien wat potgrond bovenop en hopen het beste. Dat werkt, maar niet goed.</p>
 
               <p>Wat werkt wél:</p>
               <ul>
-                <li><b>Eenmalig diep omspaten</b> (30–40 cm) bij het aanleggen. Verwijder stenen, wortels en oud gras. Daarna liever zo min mogelijk verstoren.</li>
-                <li><b>Compost toevoegen</b> — een laag van vijf tot tien centimeter compost doorwerken verbetert elke grondsoort. Zandgrond houdt beter vocht vast, kleigrond wordt losser.</li>
-                <li><b>Geen turf of kokosvezel</b> — ze houden vocht vast maar voegen geen voedingsstoffen toe en verslechteren de bodemstructuur op de lange termijn.</li>
-                <li><b>Bodembedekking</b> — leg stro, grasmaaisel of houtsnippers tussen je planten. Dat houdt vocht vast, onderdrukt onkruid en voedt het bodemleven.</li>
+                <li><b>Eenmalig diep omspaten</b> (30 tot 40 cm) bij het aanleggen. Verwijder stenen, wortels en oud gras. Daarna liever zo min mogelijk verstoren.</li>
+                <li><b>Compost toevoegen</b>: een laag van vijf tot tien centimeter compost doorwerken verbetert elke grondsoort. Zandgrond houdt beter vocht vast, kleigrond wordt losser.</li>
+                <li><b>Geen turf of kokosvezel</b>: ze houden vocht vast maar voegen geen voedingsstoffen toe en verslechteren de bodemstructuur op de lange termijn.</li>
+                <li><b>Bodembedekking</b>: leg stro, grasmaaisel of houtsnippers tussen je planten. Dat houdt vocht vast, onderdrukt onkruid en voedt het bodemleven.</li>
               </ul>
 
-              <blockquote>Grond verbeteren is de beste investering die je kunt doen. Niet zaden, niet tools — grond.</blockquote>
+              <blockquote>Grond verbeteren is de beste investering die je kunt doen. Niet zaden, niet tools: grond.</blockquote>
 
               <h2 id="zaaien"><span className="num">Stap 05</span>Zaaien of planten kopen</h2>
               <p>Voor je eerste seizoen is het antwoord simpel: <b>koop plantjes</b> voor de lastige gewassen en zaai alleen de makkelijke direct in de grond.</p>
 
               <p>Plantjes kopen is duurder maar vergeeft fouten. Als jij je tomatenplantje te vroeg buiten zet, gaat het maar één plant mis. Als je zelf zaait en iets fout gaat, ben je vier weken kwijt. Koop tomaten, paprika en courgette als plant. Zaai radijs, sla, spinazie en bonen direct.</p>
 
-              <p>Zaaien vanuit huis (vooruit zaaien) heeft zin voor tomaten en paprika als je een lichte plek binnenshuis hebt — vensterbank of serre. Zaai dan in februari–maart, zodat je in mei stevige planten hebt. Zonder lichte plek: koop plantjes.</p>
+              <p>Zaaien vanuit huis (vooruit zaaien) heeft zin voor tomaten en paprika als je een lichte plek binnenshuis hebt: vensterbank of serre. Zaai dan in februari tot maart, zodat je in mei stevige planten hebt. Zonder lichte plek: koop plantjes.</p>
 
               <h2 id="planning"><span className="num">Stap 06</span>Planning per seizoen</h2>
 
-              <h3>Voorjaar (maart – april)</h3>
+              <h3>Voorjaar (maart tot april)</h3>
               <ul>
                 <li>Grond omspaten en compost toevoegen</li>
                 <li>Zaaien: spinazie, veldsla, radijs, peterselie (buiten)</li>
@@ -224,7 +224,7 @@ export default function MoestuinBeginnersPage() {
                 <li>Beginnen met water geven en bijhouden</li>
               </ul>
 
-              <h3>Zomer (juni – augustus)</h3>
+              <h3>Zomer (juni tot augustus)</h3>
               <ul>
                 <li>Regelmatig oogsten: hoe meer je plukt, hoe meer er groeit</li>
                 <li>Tomaten dieven uitbreken en bijbemesten</li>
@@ -232,7 +232,7 @@ export default function MoestuinBeginnersPage() {
                 <li>Onkruid bijhouden, bij voorkeur na regen</li>
               </ul>
 
-              <h3>Herfst (september – oktober)</h3>
+              <h3>Herfst (september tot oktober)</h3>
               <ul>
                 <li>Spinazie en veldsla opnieuw zaaien voor herfstoogst</li>
                 <li>Bodem afdekken met compost na het ruimen van de bedden</li>
@@ -242,7 +242,7 @@ export default function MoestuinBeginnersPage() {
               <h2 id="fouten"><span className="num">Stap 07</span>De vijf meest gemaakte beginnerfouten</h2>
 
               <ul>
-                <li><b>Te groot beginnen.</b> Je verliest het overzicht en de motivatie. Begin met 4–6 m².</li>
+                <li><b>Te groot beginnen.</b> Je verliest het overzicht en de motivatie. Begin met 4 tot 6 m².</li>
                 <li><b>Onvoldoende zon.</b> Vier uur zon geeft een halfslachtige oogst. Zes tot acht uur geeft een echte oogst.</li>
                 <li><b>Te weinig of te veel water geven.</b> Elke dag een beetje water is slechter dan twee keer per week diep water geven. Oppervlakkig water geven kweekt oppervlakkige wortels.</li>
                 <li><b>Onkruid laten staan.</b> Onkruid concurreert om vocht en voedingsstoffen. Tien minuten per week bijhouden is beter dan één uur per maand inhalen.</li>
@@ -272,26 +272,26 @@ export default function MoestuinBeginnersPage() {
               <div className="box">
                 <div className="lbl">Snel aan de slag</div>
                 <h5>Moestuin beginnen, checklist</h5>
-                <div className="row"><span>Oppervlakte</span><b>4–6 m²</b></div>
+                <div className="row"><span>Oppervlakte</span><b>4 tot 6 m²</b></div>
                 <div className="row"><span>Zon minimaal</span><b>6 uur/dag</b></div>
                 <div className="row"><span>Grond</span><b>+ compost</b></div>
-                <div className="row"><span>Begin met</span><b>4–6 soorten</b></div>
-                <div className="row"><span>Eerste oogst</span><b>3–4 weken</b></div>
+                <div className="row"><span>Begin met</span><b>4 tot 6 soorten</b></div>
+                <div className="row"><span>Eerste oogst</span><b>3 tot 4 weken</b></div>
                 <div className="row"><span>Moeilijkheid</span><b>★☆☆☆☆</b></div>
               </div>
               <div className="box">
                 <div className="lbl">Makkelijkste keuzes</div>
                 <h5>Groenten voor beginners</h5>
-                <div className="row"><span>Radijs</span><b>3–4 wk</b></div>
-                <div className="row"><span>Sla</span><b>5–6 wk</b></div>
-                <div className="row"><span>Spinazie</span><b>5–8 wk</b></div>
-                <div className="row"><span>Courgette</span><b>8–10 wk</b></div>
-                <div className="row"><span>Stamboon</span><b>8–10 wk</b></div>
+                <div className="row"><span>Radijs</span><b>3 tot 4 wk</b></div>
+                <div className="row"><span>Sla</span><b>5 tot 6 wk</b></div>
+                <div className="row"><span>Spinazie</span><b>5 tot 8 wk</b></div>
+                <div className="row"><span>Courgette</span><b>8 tot 10 wk</b></div>
+                <div className="row"><span>Stamboon</span><b>8 tot 10 wk</b></div>
               </div>
               <div className="box" style={{ background: 'var(--forest)', color: 'var(--paper)', borderColor: 'var(--forest)' }}>
                 <div className="lbl" style={{ color: '#e8c896', borderColor: '#4a7040' }}>Gratis hulp</div>
                 <h5 style={{ color: 'var(--paper)' }}>Vraag het aan <em>Moos.</em></h5>
-                <p style={{ fontSize: 13, color: 'rgba(244,239,228,.75)', margin: '8px 0 12px', lineHeight: 1.5 }}>Gaat er iets mis? Moos diagnosticeert je probleem in gewoon Nederlands — geen account nodig.</p>
+                <p style={{ fontSize: 13, color: 'rgba(244,239,228,.75)', margin: '8px 0 12px', lineHeight: 1.5 }}>Gaat er iets mis? Moos diagnosticeert je probleem in gewoon Nederlands, geen account nodig.</p>
                 <Link href="/" style={{ display: 'inline-block', background: 'var(--terracotta)', color: 'var(--paper)', fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '.12em', textTransform: 'uppercase', padding: '10px 14px', textDecoration: 'none' }}>Stel je vraag →</Link>
               </div>
             </aside>
@@ -332,7 +332,7 @@ export default function MoestuinBeginnersPage() {
               </div>
               <div className="meta-row"><span className="tag">Gids</span><span className="meta">Interactief</span></div>
               <h3>Zaaikalender <span className="it">per maand en gewas</span></h3>
-              <p className="excerpt">Wanneer je wat kunt zaaien en planten — overzichtelijk per maand weergegeven.</p>
+              <p className="excerpt">Wanneer je wat kunt zaaien en planten, overzichtelijk per maand weergegeven.</p>
               <Link href="/zaaikalender" className="read">Bekijk kalender →</Link>
             </article>
           </div>

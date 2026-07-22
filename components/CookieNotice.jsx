@@ -8,7 +8,7 @@ const STORAGE_KEY = 'moestuin-cookie-ack'
  *
  * Moestuin.nl plaatst geen tracking- of advertentiecookies. De enige statistiek
  * is Vercel Web Analytics, dat cookieloos werkt. Er is dus geen consent-gate
- * nodig die trackers blokkeert (die zijn er niet) — wel een korte, transparante
+ * nodig die trackers blokkeert (die zijn er niet), wel een korte, transparante
  * melding met een verwijzing naar de privacyverklaring. De keuze wordt lokaal
  * onthouden in localStorage, zodat de balk daarna wegblijft.
  */
@@ -19,7 +19,7 @@ export default function CookieNotice() {
     try {
       if (!localStorage.getItem(STORAGE_KEY)) setVisible(true)
     } catch {
-      // localStorage kan geblokkeerd zijn (privacymodus) — dan tonen we niets.
+      // localStorage kan geblokkeerd zijn (privacymodus): dan tonen we niets.
     }
   }, [])
 

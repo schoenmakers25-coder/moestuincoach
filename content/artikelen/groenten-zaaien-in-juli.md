@@ -29,7 +29,7 @@ In dit artikel lees je welke groenten je in juli nog met succes kunt zaaien, hoe
 
 ## Waarom juli een goede zaaimaand is
 
-De bodemtemperatuur is in juli op zijn hoogst. Zaden die warmte nodig hebben om te kiemen — zoals bonen en bietjes — komen nu binnen enkele dagen boven. Tegelijk zijn er nog ruim voldoende groeidagen tot de eerste nachtvorst, die in Nederland doorgaans pas eind oktober valt.
+De bodemtemperatuur is in juli op zijn hoogst. Zaden die warmte nodig hebben om te kiemen, zoals bonen en bietjes, komen nu binnen enkele dagen boven. Tegelijk zijn er nog ruim voldoende groeidagen tot de eerste nachtvorst, die in Nederland doorgaans pas eind oktober valt.
 
 Het enige waar je op moet letten is vocht. Een zaaibed dat uitdroogt in de julizon kiemt slecht. Zaai daarom bij voorkeur in de avond en houd de bovenste centimeters grond consequent vochtig tot de zaailingen boven staan.
 
@@ -37,11 +37,11 @@ Het enige waar je op moet letten is vocht. Een zaaibed dat uitdroogt in de juliz
 
 Deze gewassen zijn binnen zes tot acht weken klaar en passen perfect op een plek die net is vrijgekomen:
 
-- **Sla** — kies hittebestendige zomerrassen; gewone kropsla schiet snel door in de warmte.
-- **Radijs** — binnen vier weken oogstbaar, ideaal als tussengewas.
-- **Spinazie** — zaai een bijtbestendig zomerras of wacht tot eind juli als het wat afkoelt.
-- **Snijbiet** — zaai nu en oogst blad voor blad tot ver in de herfst.
-- **Bospeen** — een korte wortel die je nog voor de winter kunt rooien.
+- **Sla**: kies hittebestendige zomerrassen; gewone kropsla schiet snel door in de warmte.
+- **Radijs**: binnen vier weken oogstbaar, ideaal als tussengewas.
+- **Spinazie**: zaai een bijtbestendig zomerras of wacht tot eind juli als het wat afkoelt.
+- **Snijbiet**: zaai nu en oogst blad voor blad tot ver in de herfst.
+- **Bospeen**: een korte wortel die je nog voor de winter kunt rooien.
 
 Zaai in kleine porties met twee weken ertussen. Zo spreid je de oogst en heb je niet ineens tien kroppen sla tegelijk.
 
@@ -49,10 +49,10 @@ Zaai in kleine porties met twee weken ertussen. Zo spreid je de oogst en heb je 
 
 Wil je ook in oktober en november nog verse groente uit eigen tuin? Zaai dan in juli deze koudebestendige gewassen:
 
-1. **Boerenkool** — zaai nu voor, plant in augustus uit, oogst na de eerste vorst wanneer het blad zoeter wordt.
-2. **Veldsla** — extreem winterhard, blijft de hele winter door oogstbaar.
-3. **Winterpostelein** — een van de weinige groenten die je midden in de winter nog kunt plukken.
-4. **Snijbiet en andijvie** — leveren blad tot de vorst echt doorzet.
+1. **Boerenkool**: zaai nu voor, plant in augustus uit, oogst na de eerste vorst wanneer het blad zoeter wordt.
+2. **Veldsla**: extreem winterhard, blijft de hele winter door oogstbaar.
+3. **Winterpostelein**: een van de weinige groenten die je midden in de winter nog kunt plukken.
+4. **Snijbiet en andijvie**: leveren blad tot de vorst echt doorzet.
 
 Deze gewassen vragen weinig onderhoud en houden je moestuin productief als de tomaten en courgettes allang zijn uitgeput.
 
@@ -63,7 +63,7 @@ Deze gewassen vragen weinig onderhoud en houden je moestuin productief als de to
 - Geef water met een fijne broes zodat je de zaadjes niet wegspoelt.
 - Gebruik een dun laagje stro of grasmaaisel tussen de rijen om vocht vast te houden.
 
-Wil je precies weten wat er per maand kan? Bekijk dan de volledige [zaaikalender](/zaaikalender) met 36 gewassen. Twijfel je of je grond geschikt is voor een tweede ronde? Lees dan onze gids over [een moestuin beginnen](/artikel/moestuin-beginnen) — de basis van goede grond geldt het hele jaar door.
+Wil je precies weten wat er per maand kan? Bekijk dan de volledige [zaaikalender](/zaaikalender) met 36 gewassen. Twijfel je of je grond geschikt is voor een tweede ronde? Lees dan onze gids over [een moestuin beginnen](/artikel/moestuin-beginnen). De basis van goede grond geldt het hele jaar door.
 
 ## Aan de slag
 

@@ -9,7 +9,7 @@ export default function SiteFooter() {
             <div className="big-mark">moestuin<span className="dot"></span></div>
             <div style={{ maxWidth: '34ch', color: 'rgba(244,239,228,.65)', fontSize: 14, lineHeight: 1.5 }}>
               De moestuingids voor Nederland en Vlaanderen, geen account nodig. Gemaakt op{' '}
-              <a href="/over" style={{ color: 'rgba(244,239,228,.85)' }}>Hoeve 1700</a> — voor wie z&apos;n handen vies wil maken.
+              <a href="/over" style={{ color: 'rgba(244,239,228,.85)' }}>Hoeve 1700</a>, voor wie z&apos;n handen vies wil maken.
             </div>
           </div>
           <div>

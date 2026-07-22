@@ -114,7 +114,7 @@ export default function ArtikelOverzichtPage() {
               Wat kun je <em>deze maand zaaien?</em>
             </h2>
             <p style={{ fontSize: 16, color: 'rgba(244,239,228,.75)', margin: 0, maxWidth: '52ch', lineHeight: 1.6 }}>
-              De zaaikalender laat voor 36 gewassen zien wanneer je zaait, plant en oogst — binnen en buiten, per maand.
+              De zaaikalender laat voor 36 gewassen zien wanneer je zaait, plant en oogst, binnen en buiten, per maand.
             </p>
           </div>
           <Link

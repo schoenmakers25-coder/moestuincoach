@@ -5,21 +5,21 @@ import { getAllArticles, formatDateShort, SITE_URL } from '@/lib/articles'
 export const revalidate = 3600
 
 export const metadata = {
-  title: 'Moestuin.nl — wekelijkse tuintips en de Nederlandse zaaikalender',
+  title: 'Moestuin.nl: wekelijkse tuintips en de Nederlandse zaaikalender',
   description:
-    'Elke week een nieuwe, praktische moestuingids over wat er nú in de tuin speelt — plus de complete Nederlandse zaaikalender met 36 gewassen. Gratis, geen account.',
+    'Elke week een nieuwe, praktische moestuingids over wat er nú in de tuin speelt, plus de complete Nederlandse zaaikalender met 36 gewassen. Gratis, geen account.',
   robots: { index: true, follow: true },
   alternates: { canonical: `${SITE_URL}/` },
   openGraph: {
     type: 'website',
     url: `${SITE_URL}/`,
-    title: 'Moestuin.nl — wekelijkse tuintips en de Nederlandse zaaikalender',
+    title: 'Moestuin.nl: wekelijkse tuintips en de Nederlandse zaaikalender',
     description: 'Elke week een nieuwe moestuingids plus de complete zaaikalender. Gratis, geen account nodig.',
     locale: 'nl_NL',
   },
   twitter: {
     card: 'summary',
-    title: 'Moestuin.nl — wekelijkse tuintips en zaaikalender',
+    title: 'Moestuin.nl: wekelijkse tuintips en zaaikalender',
     description: 'Elke week een nieuwe moestuingids plus de complete Nederlandse zaaikalender.',
   },
 }
@@ -85,8 +85,7 @@ export default function Page() {
       {/* Ribbon */}
       <div className="wrap">
         <div className="home-ribbon">
-          <span><span className="accent">Elke week een nieuwe gids</span> — voor de Nederlandse moestuin</span>
-          <span>Gratis · geen account</span>
+          <span><span className="accent">Elke week een nieuwe gids</span> voor de Nederlandse moestuin</span>
         </div>
       </div>
 
@@ -173,7 +172,7 @@ export default function Page() {
         </section>
       )}
 
-      {/* Hoeve 1700 — merkstrip */}
+      {/* Hoeve 1700: merkstrip */}
       <section className="wrap" style={{ padding: '8px 0 4px' }}>
         <Link
           href="/over"
@@ -196,7 +195,7 @@ export default function Page() {
               De moestuin en kas van <span style={{ fontStyle: 'italic' }}>Hoeve 1700.</span>
             </div>
             <div style={{ fontSize: 15, lineHeight: 1.5, color: 'rgba(244,239,228,.82)' }}>
-              De plek achter Moestuin.nl — een oude hoeve waar we de moestuin en kas weer opknappen.{' '}
+              De plek achter Moestuin.nl, een oude hoeve waar we de moestuin en kas weer opknappen.{' '}
               <span style={{ borderBottom: '1px solid rgba(244,239,228,.5)' }}>Lees het verhaal →</span>
             </div>
           </div>
@@ -213,7 +212,7 @@ export default function Page() {
                 Wat zaai, plant en oogst je <span className="it">deze maand?</span>
               </h2>
               <p className="tool-band__text">
-                De complete Nederlandse zaaikalender laat per maand precies zien wat er kan — binnen én buiten.
+                De complete Nederlandse zaaikalender laat per maand precies zien wat er kan, binnen én buiten.
                 Handig naast de wekelijkse tuintips: eerst kijken wat er nu kan, dan de gids erbij lezen.
               </p>
               <div className="home-cta-row">
@@ -249,7 +248,7 @@ export default function Page() {
               <h3>Elke week een verse gids.</h3>
               <p>
                 We publiceren wekelijks een nieuw <Link href="/artikel">artikel</Link> over wat er op dat moment in de
-                Nederlandse moestuin speelt — actueel, praktisch en getest in de praktijk.
+                Nederlandse moestuin speelt: actueel, praktisch en getest in de praktijk.
               </p>
             </div>
             <div className="step">
@@ -257,14 +256,14 @@ export default function Page() {
               <h3>Kijk wat er deze maand kan.</h3>
               <p>
                 De <Link href="/zaaikalender">zaaikalender</Link> laat per maand zien welke van de 36 gewassen je zaait,
-                plant of oogst — binnen én buiten.
+                plant of oogst, binnen én buiten.
               </p>
             </div>
             <div className="step">
               <div className="num">03</div>
               <h3>Geen account, geen gedoe.</h3>
               <p>
-                Alles op deze site is gratis en zonder inloggen te lezen. Geen nieuwsbrief nodig — kom gewoon elke week
+                Alles op deze site is gratis en zonder inloggen te lezen. Geen nieuwsbrief nodig. Kom gewoon elke week
                 even langs voor de nieuwste <Link href="/artikel">tuintip</Link>.
               </p>
             </div>

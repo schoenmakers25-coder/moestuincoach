@@ -1,9 +1,9 @@
-/* Moestuin.nl — design tokens (seed-catalog / botanical journal) */
+/* Moestuin.nl: design tokens (seed-catalog / botanical journal) */
 
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500;600&display=swap");
 
 :root {
-  /* Colour — warm earthy palette */
+  /* Colour: warm earthy palette */
   --paper:        #f4efe4;
   --paper-2:      #ede5d3;
   --paper-3:      #e3d9c3;
@@ -31,7 +31,7 @@
   --r-md: 8px;
   --r-lg: 14px;
 
-  /* Shadows — soft, paper-like */
+  /* Shadows: soft, paper-like */
   --shadow-paper: 0 1px 0 var(--line), 0 8px 24px -16px rgba(40,30,15,.18);
 }
 
@@ -49,7 +49,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Subtle paper grain — radial speckle layered with a faint diagonal weave */
+/* Subtle paper grain: radial speckle layered with a faint diagonal weave */
 body::before {
   content: "";
   position: fixed; inset: 0;
@@ -236,7 +236,7 @@ h3.card-h    { font-size: 25px; line-height: 1.08; }
 .btn-outline:hover { background: var(--ink); color: var(--paper); }
 .btn .arrow { font-family: var(--font-body); font-size: 14px; }
 
-/* Generic placeholder image — soft striped paper */
+/* Generic placeholder image: soft striped paper */
 .ph {
   background-color: var(--paper-2);
   background-image: repeating-linear-gradient(

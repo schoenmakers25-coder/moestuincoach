@@ -126,7 +126,7 @@ export default function ZaaikalenderContent() {
           <h1>De <span className="it">zaai-</span><br />kalender, <span className="it">2026.</span></h1>
           <div className="row">
             <p className="lead">
-              Zesendertig groenten, kruiden en vruchten — voor elke maand een blik op
+              Zesendertig groenten, kruiden en vruchten: voor elke maand een blik op
               wat er onder de grond, in de bak of in de pot moet.
               Selecteer een maand om alleen het seizoenswerk te zien, of filter op categorie.
             </p>
@@ -227,7 +227,7 @@ export default function ZaaikalenderContent() {
         <div className="wrap">
           <div className="section-head" style={{ borderBottomColor: 'var(--ink)', marginBottom: 32 }}>
             <h2 id="cal-heading">De hele <span className="it">kalender</span></h2>
-            <p className="intro">Alle gewassen, alle maanden — één overzicht.</p>
+            <p className="intro">Alle gewassen, alle maanden: één overzicht.</p>
             <span className="meta">36 gewassen · bijgewerkt mei 2026</span>
           </div>
           <div style={{ overflowX: 'auto' }}>
@@ -281,7 +281,7 @@ export default function ZaaikalenderContent() {
               Vraag het aan <em>Moos.</em>
             </div>
             <p style={{ fontSize: 17, color: 'rgba(244,239,228,.8)', margin: 0, maxWidth: '48ch' }}>
-              Specifieke vraag over een gewas of situatie? De AI coach geeft je direct een eerlijk antwoord — geen account nodig.
+              Specifieke vraag over een gewas of situatie? De AI coach geeft je direct een eerlijk antwoord, geen account nodig.
             </p>
           </div>
           <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: 'var(--terracotta)', color: 'var(--paper)', fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '.12em', textTransform: 'uppercase', padding: '16px 24px', textDecoration: 'none', whiteSpace: 'nowrap' }}>

@@ -5,11 +5,11 @@ Next.js 15 (App Router) site op Vercel: een gratis Nederlandse **zaaikalender**,
 
 ## Inhoud
 
-- **Zaaikalender** — 36 gewassen, statische data (`app/zaaikalender`).
-- **Tuintips** — artikelen als markdown (`content/artikelen/*.md`) + een paar oudere
+- **Zaaikalender**: 36 gewassen, statische data (`app/zaaikalender`).
+- **Tuintips**: artikelen als markdown (`content/artikelen/*.md`) + een paar oudere
   handgeschreven JSX-artikelen (`app/artikel/<slug>/`). Beide verschijnen samen in de
   blog-index, de homepage en de sitemap via `lib/articles.js`.
-- **Wekelijkse artikelworkflow** — elke maandag kiest de site zelf een actueel,
+- **Wekelijkse artikelworkflow**: elke maandag kiest de site zelf een actueel,
   seizoensrelevant onderwerp, schrijft er een SEO-artikel over, zoekt een passende
   rechtenvrije foto, publiceert het via een GitHub-commit en mailt een melding.
 
@@ -123,7 +123,7 @@ Zet op `publish` zodra je vertrouwt op de output.
 
 ## SEO
 
-- Dynamische `sitemap.xml` (`app/sitemap.js`) — pakt nieuwe artikelen automatisch mee.
+- Dynamische `sitemap.xml` (`app/sitemap.js`): pakt nieuwe artikelen automatisch mee.
 - `robots.txt` (`app/robots.js`) wijst naar de sitemap.
 - Per artikel: metadata, canonical, Open Graph + Twitter Card, en JSON-LD
   (`BlogPosting` + `BreadcrumbList`, plus `FAQPage` als er FAQ's zijn).

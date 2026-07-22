@@ -1,4 +1,4 @@
-/* Moestuin.nl — page styles */
+/* Moestuin.nl: page styles */
 
 /* === HOMEPAGE === */
 
@@ -27,7 +27,7 @@
   to   { transform: translateX(-50%); }
 }
 
-/* Hero — shared frame */
+/* Hero: shared frame */
 .hero-section {
   border-bottom: 1px solid var(--ink);
   padding: 0;
@@ -103,7 +103,7 @@
   min-height: 320px;
 }
 
-/* Catalogus hero — old seed catalog cover */
+/* Catalogus hero: old seed catalog cover */
 .hero-catalogus {
   padding: 56px 0;
   border-bottom: 1px solid var(--ink);
@@ -197,7 +197,7 @@
   line-height: 1;
 }
 
-/* Journaal hero — diary entry */
+/* Journaal hero: diary entry */
 .hero-journaal {
   padding: 80px 0;
   display: grid;
@@ -1043,7 +1043,7 @@
 .cal-table .mark.planten  { background: #3d5a3a; border-color: var(--forest-2); }
 .cal-table .mark.oogst    { background: #f4d35e; border-color: #c2a13a; }
 
-/* Now in season — featured row */
+/* Now in season: featured row */
 .now-section {
   background: var(--paper-2);
   border-bottom: 1px solid var(--ink);

@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Privacybeleid · Moestuin.nl',
-  description: 'Privacybeleid van Moestuin.nl — hoe wij omgaan met je gegevens.',
+  description: 'Privacybeleid van Moestuin.nl: hoe wij omgaan met je gegevens.',
   robots: { index: false },
 }
 
@@ -21,8 +21,8 @@ export default function PrivacyPage() {
         <h2>Welke gegevens verwerken wij?</h2>
         <p>Moestuin.nl verwerkt zo min mogelijk persoonsgegevens. Wij verzamelen:</p>
         <ul>
-          <li><strong>Gegevens uit het contactformulier</strong> — als je ons via het contactformulier een bericht stuurt, verwerken wij je naam, e-mailadres en bericht. Deze gegevens gebruiken wij uitsluitend om je vraag te beantwoorden en bewaren wij niet langer dan nodig.</li>
-          <li><strong>Anonieme bezoekersdata</strong> — via standaard server-logging (IP-adres, bezochte pagina&apos;s, tijdstip). Wij gebruiken deze gegevens uitsluitend voor technisch beheer.</li>
+          <li><strong>Gegevens uit het contactformulier</strong>: als je ons via het contactformulier een bericht stuurt, verwerken wij je naam, e-mailadres en bericht. Deze gegevens gebruiken wij uitsluitend om je vraag te beantwoorden en bewaren wij niet langer dan nodig.</li>
+          <li><strong>Anonieme bezoekersdata</strong>: via standaard server-logging (IP-adres, bezochte pagina&apos;s, tijdstip). Wij gebruiken deze gegevens uitsluitend voor technisch beheer.</li>
         </ul>
         <p>Wij maken geen gebruik van tracking-cookies of advertentietrackers van derden.</p>
 

@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Wat is er mis met je tomaten? Zes diagnoses',
-  description: 'Gele bladeren, splijtende vruchten, bruine vlekken — zes veelvoorkomende tomatenproblemen uitgelegd en opgelost.',
+  description: 'Gele bladeren, splijtende vruchten, bruine vlekken: zes veelvoorkomende tomatenproblemen uitgelegd en opgelost.',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.moestuin.nl/artikel/tomatenproblemen' },
   openGraph: {
     type: 'article',
     url: 'https://www.moestuin.nl/artikel/tomatenproblemen',
-    title: 'Wat is er mis met je tomaten? Zes diagnoses — Moestuin.nl',
-    description: 'Gele bladeren, splijtende vruchten, bruine vlekken — uitgelegd en opgelost.',
+    title: 'Wat is er mis met je tomaten? Zes diagnoses, Moestuin.nl',
+    description: 'Gele bladeren, splijtende vruchten, bruine vlekken: uitgelegd en opgelost.',
     locale: 'nl_NL',
   },
 }
@@ -19,7 +19,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Wat is er mis met je tomaten? Zes diagnoses',
-  description: 'Gele bladeren, splijtende vruchten, bruine vlekken — zes veelvoorkomende tomatenproblemen uitgelegd en opgelost.',
+  description: 'Gele bladeren, splijtende vruchten, bruine vlekken: zes veelvoorkomende tomatenproblemen uitgelegd en opgelost.',
   author: { '@type': 'Person', name: 'Joris van der Wal' },
   publisher: { '@type': 'Organization', name: 'Moestuin.nl', url: 'https://www.moestuin.nl' },
   datePublished: '2026-05-10',
@@ -56,13 +56,13 @@ export default function TomatenproblemenPage() {
             <span className="meta">Bijgewerkt 10 mei 2026 · 6 min lezen</span>
           </div>
           <h1>Wat is er mis met je tomaten? <span className="it">Zes diagnoses.</span></h1>
-          <p className="dek">Bruine vlekken, gele blaadjes, vruchten die splijten halverwege de zomer — elke klacht heeft een oorzaak, en elke oorzaak heeft een oplossing. Hier zijn de zes meest voorkomende, met wat je er aan doet.</p>
+          <p className="dek">Bruine vlekken, gele blaadjes, vruchten die splijten halverwege de zomer: elke klacht heeft een oorzaak, en elke oorzaak heeft een oplossing. Hier zijn de zes meest voorkomende, met wat je er aan doet.</p>
           <div className="byline-row">
             <div className="byline">
               <div className="avatar">J</div>
               <div className="who">
                 <b>Joris van der Wal</b>
-                <span>Hoofdtuinier — sinds 2018</span>
+                <span>Hoofdtuinier, sinds 2018</span>
               </div>
             </div>
             <div className="meta">10 mei 2026 · Diagnose · 6 min</div>
@@ -96,37 +96,37 @@ export default function TomatenproblemenPage() {
             </aside>
 
             <article className="prose">
-              <p>Tomaten zijn eerlijk. Ze laten precies zien wat er mis is — als je weet waar je op moet letten. Het probleem is dat veel klachten er hetzelfde uitzien maar een andere oorzaak hebben. Gele bladeren kunnen vijf dingen betekenen. Hier is een praktische diagnosegids, van meest naar minst voorkomend.</p>
+              <p>Tomaten zijn eerlijk. Ze laten precies zien wat er mis is, als je weet waar je op moet letten. Het probleem is dat veel klachten er hetzelfde uitzien maar een andere oorzaak hebben. Gele bladeren kunnen vijf dingen betekenen. Hier is een praktische diagnosegids, van meest naar minst voorkomend.</p>
 
-              <h2 id="geel"><span className="num">Diagnose 01</span>Gele bladeren — maar welke en waar?</h2>
-              <p>Geel is geen diagnose — het is een symptoom. De plek op de plant bepaalt de oorzaak:</p>
+              <h2 id="geel"><span className="num">Diagnose 01</span>Gele bladeren, maar welke en waar?</h2>
+              <p>Geel is geen diagnose: het is een symptoom. De plek op de plant bepaalt de oorzaak:</p>
               <ul>
                 <li><b>Onderste blaadjes worden geel</b> → normaal. De plant gooit oude bladeren overboord als hij groeit. Geen actie nodig, tenzij het snel omhoog trekt.</li>
                 <li><b>Geel met groene nerven, middelste bladeren</b> → magnesiumtekort. Geef een handje bitterzout (magnesiumsulfaat) opgelost in water, direct aan de grond.</li>
-                <li><b>Geheel geel, bovenkant van de plant</b> → stikstoftekort. Bemest met een snelwerkende vloeibare meststof. Check ook of de grond niet te nat is — uitgespoelde stikstof in te natte grond is een veelgemaakte oorzaak.</li>
+                <li><b>Geheel geel, bovenkant van de plant</b> → stikstoftekort. Bemest met een snelwerkende vloeibare meststof. Check ook of de grond niet te nat is: uitgespoelde stikstof in te natte grond is een veelgemaakte oorzaak.</li>
                 <li><b>Geel met bruine randjes</b> → kaliumtekort. Tomaten zijn verslaafd aan kalium. Geef tomatenmest met een hoog K-gehalte.</li>
               </ul>
 
               <blockquote>Bij twijfel: controleer altijd eerst de watergift. Zowel te droog als te nat leidt tot vergelijkbare geelverkleuring.</blockquote>
 
               <h2 id="ber"><span className="num">Diagnose 02</span>Zwarte, ingezonken bodem aan de vrucht</h2>
-              <p>Dit heet bloemkelknecrose (BER — Blossom End Rot). Het ziet eruit als een bruine, leerachtige vlek aan de onderkant van de vrucht. Het is geen schimmel en geen ziekte — het is een calciumprobleem.</p>
+              <p>Dit heet bloemkelknecrose (BER, Blossom End Rot). Het ziet eruit als een bruine, leerachtige vlek aan de onderkant van de vrucht. Het is geen schimmel en geen ziekte: het is een calciumprobleem.</p>
               <p>De meeste tuiniergronden hebben genoeg calcium. Het échte probleem is dat de plant het calcium niet kan opnemen: te droge grond, te onregelmatige watertoevoer, of een te hoge EC-waarde door te veel bemesting. Oplossing: regelmatiger water geven (liever een dag op dag af dan eens per week veel), en stop even met bemesten. Je kunt ook calciumnectar spuiten op de vruchten als noodmaatregel.</p>
 
               <div className="pull">
                 <div className="big">BER</div>
-                <div className="txt">treft tot 30% van de vruchten als de watertoevoer onregelmatig is — zelfs bij grond met ruim voldoende calcium.</div>
+                <div className="txt">treft tot 30% van de vruchten als de watertoevoer onregelmatig is, zelfs bij grond met ruim voldoende calcium.</div>
               </div>
 
               <h2 id="splijt"><span className="num">Diagnose 03</span>Splijtende vruchten</h2>
-              <p>Bijna rijpe tomaten die plotseling opensplijten — dit is het meest frustrerende tomatenprobleem. De oorzaak: na een droge periode plotseling veel water geven. De vrucht groeit in een paar dagen snel op van binnenuit terwijl de schil dat tempo niet bij kan houden. Dan scheurt de schil.</p>
-              <p>Preventie is simpel maar vraagt discipline: regelmatig water geven, ook als het bewolkt is. Mulch op de grond helpt de vochtspanning stabiel te houden. Als het al te laat is en de vruchten splijten, oogst dan snel — ze kunnen nog rijpen op het aanrecht.</p>
+              <p>Bijna rijpe tomaten die plotseling opensplijten: dit is het meest frustrerende tomatenprobleem. De oorzaak: na een droge periode plotseling veel water geven. De vrucht groeit in een paar dagen snel op van binnenuit terwijl de schil dat tempo niet bij kan houden. Dan scheurt de schil.</p>
+              <p>Preventie is simpel maar vraagt discipline: regelmatig water geven, ook als het bewolkt is. Mulch op de grond helpt de vochtspanning stabiel te houden. Als het al te laat is en de vruchten splijten, oogst dan snel. Ze kunnen nog rijpen op het aanrecht.</p>
 
               <h2 id="bruin"><span className="num">Diagnose 04</span>Bruine vlekken op bladeren</h2>
               <p>Twee schuldigen, beide gevaarlijk:</p>
               <ul>
-                <li><b>Phytophthora infestans (aardappelplaag)</b> — donkerbruine, natte vlekken op bladeren en stengels, die snel groter worden. In natte zomers kan dit een hele plant in een week vernietigen. Verwijder aangetaste bladeren direct en verbrand ze (nooit composteren). Behandel preventief met kopermiddelen als het nat weer voorspeld is.</li>
-                <li><b>Alternaria (vroegvlekkenziekte)</b> — kleine bruine vlekken met gele rand, beginnen onderaan. Minder agressief. Verwijder aangetaste bladeren, zorg voor betere luchtcirculatie door overmatig blad weg te knippen.</li>
+                <li><b>Phytophthora infestans (aardappelplaag)</b>: donkerbruine, natte vlekken op bladeren en stengels, die snel groter worden. In natte zomers kan dit een hele plant in een week vernietigen. Verwijder aangetaste bladeren direct en verbrand ze (nooit composteren). Behandel preventief met kopermiddelen als het nat weer voorspeld is.</li>
+                <li><b>Alternaria (vroegvlekkenziekte)</b>: kleine bruine vlekken met gele rand, beginnen onderaan. Minder agressief. Verwijder aangetaste bladeren, zorg voor betere luchtcirculatie door overmatig blad weg te knippen.</li>
               </ul>
               <p>Vuistregel: vochtige, koele zomers → Phytophthora-risico hoog. Hete, droge periodes afgewisseld met buien → Alternaria. In beide gevallen: nooit water geven op de bladeren.</p>
 
@@ -134,18 +134,18 @@ export default function TomatenproblemenPage() {
               <p>Als de bovenste blaadjes naar binnen krullen: dit is vaak gewoon hittestress. De plant beschermt zijn bladeren tegen verdamping. Bij temperaturen boven 30°C is dit normaal en tijdelijk. Geef water aan de voet en wacht tot het koeler wordt.</p>
               <p>Als de blaadjes ook verkleuren of ingedroogd aanvoelen: kijk naar virussen (mozaïekvirus, bladrolziekte). Virussen worden overgedragen door bladluizen. Bestrijden: bladluizen aanpakken met insectenzeep, aangetaste planten verwijderen als het ernstig is.</p>
 
-              <h2 id="bloem"><span className="num">Diagnose 06</span>Bloemknopval — bloemen die afvallen voor de vrucht</h2>
+              <h2 id="bloem"><span className="num">Diagnose 06</span>Bloemknopval: bloemen die afvallen voor de vrucht</h2>
               <p>De plant maakt bloemen aan maar ze vallen af voordat er vruchten vormen. Oorzaken:</p>
               <ul>
-                <li>Nachttemperatuur onder 10°C of boven 32°C — buiten de grens voor bestuiving</li>
-                <li>Te lage luchtvochtigheid — stuifmeel plakt dan vast aan de meeldraden</li>
-                <li>Te weinig licht — de plant gooit bloemen overboord als energiebesparing</li>
-                <li>Overmatige stikstofbemesting — de plant maakt dan blad in plaats van vrucht</li>
+                <li>Nachttemperatuur onder 10°C of boven 32°C: buiten de grens voor bestuiving</li>
+                <li>Te lage luchtvochtigheid: stuifmeel plakt dan vast aan de meeldraden</li>
+                <li>Te weinig licht: de plant gooit bloemen overboord als energiebesparing</li>
+                <li>Overmatige stikstofbemesting: de plant maakt dan blad in plaats van vrucht</li>
               </ul>
               <p>In de meeste gevallen lost het zichzelf op als het weer stabiel wordt. Zet de planten op een plek met meer zon, stop tijdelijk met stikstofmest, en wacht.</p>
 
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--muted)', marginTop: 56, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
-                Diagnoses gebaseerd op praktijkervaring en WUR-richtlijnen voor tomatenteelt. Heb je twijfel? Stuur een foto naar Moos — de AI coach helpt je snel verder.
+                Diagnoses gebaseerd op praktijkervaring en WUR-richtlijnen voor tomatenteelt. Heb je twijfel? Stuur een foto naar Moos. De AI coach helpt je snel verder.
               </p>
             </article>
 
@@ -204,7 +204,7 @@ export default function TomatenproblemenPage() {
               </div>
               <div className="meta-row"><span className="tag">Rassen</span><span className="meta">12 min · 20 apr</span></div>
               <h3>Tien tomatenrassen <span className="it">die altijd lukken</span></h3>
-              <p className="excerpt">Van Gardeners&apos; Delight tot Brandywine — getest op smaak, opbrengst en robuustheid.</p>
+              <p className="excerpt">Van Gardeners&apos; Delight tot Brandywine: getest op smaak, opbrengst en robuustheid.</p>
               <Link href="/artikel/tomatenrassen" className="read">Lees verder →</Link>
             </article>
           </div>

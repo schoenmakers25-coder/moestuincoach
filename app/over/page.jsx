@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Over Moestuin.nl — de moestuin en kas van Hoeve 1700',
+  title: 'Over Moestuin.nl: de moestuin en kas van Hoeve 1700',
   description:
     'Moestuin.nl komt van Hoeve 1700, een oude hoeve waar we een verwaarloosde moestuin en kas weer tot leven brengen. Lees het verhaal, en hoe deze site gemaakt wordt.',
   robots: { index: true, follow: true },
@@ -60,7 +60,7 @@ export default function OverPage() {
         src="/hoeve/hoeve1700.jpg"
         alt="Hoeve 1700 vanuit de lucht, met moestuin en boomgaard in glooiend heuvelland"
         ratio="3 / 2"
-        caption="Hoeve 1700 — de thuisbasis van Moestuin.nl."
+        caption="Hoeve 1700: de thuisbasis van Moestuin.nl."
       />
 
       <section style={{ margin: '48px 0', borderTop: '1px solid var(--line)', paddingTop: 40 }}>
@@ -68,12 +68,12 @@ export default function OverPage() {
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
           Toen we op Hoeve 1700 begonnen, waren de moestuin en de kas jarenlang aan hun lot overgelaten:
           overwoekerde bedden, een kas vol wildgroei. Precies dat maakt het mooi. Een moestuin opnieuw opbouwen
-          is geen klus die je even afvinkt — het is een langzaam ritme van zaaien, wachten, bijsturen en oogsten.
+          is geen klus die je even afvinkt: het is een langzaam ritme van zaaien, wachten, bijsturen en oogsten.
           Je handen in de grond, je hoofd even leeg.
         </p>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)' }}>
           Dat onthaasten is voor ons de kern. Niet de perfecte oogst, maar het rustige werk eromheen. En alles
-          wat we onderweg leren — wat wél werkt, wat onzin blijkt — schrijven we op. Dat is Moestuin.nl.
+          wat we onderweg leren, wat wél werkt, wat onzin blijkt, schrijven we op. Dat is Moestuin.nl.
         </p>
       </section>
 
@@ -88,7 +88,7 @@ export default function OverPage() {
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 16 }}>De kas</h2>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
           Het hart van de tuin is de kas: een glazen serre met zwart gecoate profielen, opgebouwd met hergebruikt
-          materiaal. Onder glas verschuift het seizoen — eerder zaaien in het voorjaar, langer doorgaan in het najaar,
+          materiaal. Onder glas verschuift het seizoen: eerder zaaien in het voorjaar, langer doorgaan in het najaar,
           en een plek om te schuilen als het buiten giet.
         </p>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)' }}>
@@ -112,7 +112,7 @@ export default function OverPage() {
       <section style={{ margin: '48px 0' }}>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 16 }}>Tuintips &amp; gidsen</h2>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
-          Elke week verschijnt er een nieuwe gids over wat er op dat moment speelt in de moestuin — beginnersgidsen,
+          Elke week verschijnt er een nieuwe gids over wat er op dat moment speelt in de moestuin: beginnersgidsen,
           stappenplannen, plaagbestrijding en seizoensoverzichten. Steeds vanuit het perspectief van de tuinier:
           wat werkt echt, wat is onzin, en wat heb je minimaal nodig.
         </p>
@@ -121,7 +121,7 @@ export default function OverPage() {
         </Link>
       </section>
 
-      {/* Transparantie — E-E-A-T: eerlijk over hoe de content ontstaat. */}
+      {/* Transparantie, E-E-A-T: eerlijk over hoe de content ontstaat. */}
       <section style={{ margin: '48px 0', background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 4, padding: '28px 30px' }}>
         <div style={{ ...mono, color: 'var(--muted)', marginBottom: 12 }}>Hoe deze site gemaakt wordt</div>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
@@ -130,7 +130,7 @@ export default function OverPage() {
           wat hier op de hoeve echt werkt. Zo houden we het tempo hoog zonder de praktijk uit het oog te verliezen.
         </p>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', margin: 0 }}>
-          We vinden dat je dat mag weten. Kom je iets tegen dat niet klopt? <Link href="/contact" style={{ color: 'var(--terracotta)', fontWeight: 600 }}>Laat het weten</Link> — we corrigeren graag.
+          We vinden dat je dat mag weten. Kom je iets tegen dat niet klopt? <Link href="/contact" style={{ color: 'var(--terracotta)', fontWeight: 600 }}>Laat het weten</Link>. We corrigeren graag.
         </p>
       </section>
 

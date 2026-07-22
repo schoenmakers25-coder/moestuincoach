@@ -72,7 +72,7 @@ export async function POST(request) {
       from: process.env.RESEND_FROM || 'Moestuin.nl <onboarding@resend.dev>',
       to: 'schoenmakers25@gmail.com',
       replyTo: emailClean,
-      subject: `Contactformulier — ${naamSafe}`,
+      subject: `Contactformulier: ${naamSafe}`,
       html: `
         <p><strong>Naam:</strong> ${naamSafe}</p>
         <p><strong>E-mail:</strong> ${escapeHtml(emailClean)}</p>

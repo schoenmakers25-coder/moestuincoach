@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server'
 import { runWeeklyArticle } from '@/lib/pipeline/run'
 
-// Fase 2 — Wekelijkse trigger (Vercel Cron).
+// Fase 2: Wekelijkse trigger (Vercel Cron).
 // Draait elke maandagochtend (zie vercel.json) en voert de hele pipeline uit.
 // Beveiligd met CRON_SECRET via de Authorization-header.
 
 export const dynamic = 'force-dynamic'
-export const maxDuration = 300 // seconden — ruim voor onderzoek + schrijven + foto's
+export const maxDuration = 300 // seconden, ruim voor onderzoek + schrijven + foto's
 
 function isAuthorized(request) {
   const secret = process.env.CRON_SECRET

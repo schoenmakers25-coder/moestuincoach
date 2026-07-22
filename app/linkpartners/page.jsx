@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Linkpartners — Moestuin.nl',
+  title: 'Linkpartners: Moestuin.nl',
   description: 'Informatie voor websites die willen samenwerken met Moestuin.nl via een linkpartnerschap of redactionele samenwerking.',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.moestuin.nl/linkpartners' },
@@ -20,13 +20,13 @@ export default function LinkpartnersPage() {
       </h1>
 
       <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-2)', maxWidth: '58ch', marginBottom: 56, borderBottom: '1px solid var(--line)', paddingBottom: 40 }}>
-        Moestuin.nl is een Nederlandse tuinier­website gericht op het helpen van mensen bij het aanleggen en onderhouden van een moestuin. We zijn op zoek naar relevante linkpartners — websites die schrijven over tuinieren, gezond eten, buiten­leven of aanverwante onderwerpen.
+        Moestuin.nl is een Nederlandse tuinier­website gericht op het helpen van mensen bij het aanleggen en onderhouden van een moestuin. We zijn op zoek naar relevante linkpartners: websites die schrijven over tuinieren, gezond eten, buiten­leven of aanverwante onderwerpen.
       </p>
 
       <section style={{ marginBottom: 56 }}>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 16 }}>Over Moestuin.nl</h2>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
-          Moestuin.nl combineert redactionele tuiniersgidsen met een gratis AI-tuincoach (Moos) die bezoekers direct en persoonlijk advies geeft over hun moestuin. De site richt zich op beginners en gevorderde tuiniers die praktisch advies zoeken — geen reclame, geen overbodige toeters en bellen.
+          Moestuin.nl combineert redactionele tuiniersgidsen met een gratis AI-tuincoach (Moos) die bezoekers direct en persoonlijk advies geeft over hun moestuin. De site richt zich op beginners en gevorderde tuiniers die praktisch advies zoeken: geen reclame, geen overbodige toeters en bellen.
         </p>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)' }}>
           De site is gelanceerd in mei 2026 en groeit organisch via content en AI-gestuurde vragen. We werken aan een structurele contentbasis van wekelijks nieuwe tuiniersgidsen.
@@ -37,7 +37,7 @@ export default function LinkpartnersPage() {
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 20 }}>Doelgroep</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 1, background: 'var(--line)', border: '1px solid var(--line)' }}>
           {[
-            ['Leeftijd', '28 – 55 jaar'],
+            ['Leeftijd', '28 tot 55 jaar'],
             ['Interesse', 'Tuinieren, gezond eten, duurzaamheid'],
             ['Situatie', 'Tuin, balkon of volkstuin'],
             ['Niveau', 'Beginner tot gevorderd'],
@@ -71,7 +71,7 @@ export default function LinkpartnersPage() {
         <div style={{ borderTop: '2px solid var(--ink)' }}>
           {[
             ['Relevantie', 'De website schrijft over een onderwerp dat aansluit bij tuinieren of gezond buiten­leven.'],
-            ['Kwaliteit', 'De website heeft leesbare, originele content — geen doorgesluisde of automatisch gegenereerde teksten.'],
+            ['Kwaliteit', 'De website heeft leesbare, originele content: geen doorgesluisde of automatisch gegenereerde teksten.'],
             ['Geen betaalde links', 'Wij kopen geen links en verkopen ze niet. Alle samenwerkingen zijn redactioneel van aard.'],
             ['Wederkerigheid', 'We staan open voor linkruil mits beide pagina\'s inhoudelijk relevant zijn voor de bezoekers.'],
             ['Ankertekst', 'We gebruiken beschrijvende ankerteksten die de bestemming accuraat omschrijven.'],
