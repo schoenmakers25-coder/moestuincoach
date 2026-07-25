@@ -144,7 +144,7 @@ export default function ContactForm() {
           onChange={set('naam')}
           onFocus={() => setFocus('naam')}
           onBlur={() => setFocus(null)}
-          placeholder="Joris van der Wal"
+          placeholder="Sanne de Groot"
           autoComplete="name"
           style={focus === 'naam' ? INPUT_FOCUS : errors.naam ? { ...INPUT, borderColor: 'var(--terracotta)' } : INPUT}
           disabled={status === 'sending'}

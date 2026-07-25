@@ -27,7 +27,7 @@ const jsonLd = {
     { '@type': 'HowToStep', name: 'Zet de stok op de juiste plek', text: 'Minimaal 5 cm van de stengel. Duw de stok schuin weg van de plant de grond in en corrigeer daarna naar verticaal. Zo prik je niet door de wortelbal.' },
     { '@type': 'HowToStep', name: 'Bind correct aan', text: 'Gebruik een zachte bindmethode: touw in een acht-figuur (stengel en stok krijgen elk hun eigen lus), niet strak. Laat groeimarge: de stengel wordt dikker.' },
   ],
-  author: { '@type': 'Person', name: 'Joris van der Wal' },
+  author: { '@type': 'Person', name: 'Sanne de Groot' },
   publisher: { '@type': 'Organization', name: 'Moestuin.nl', url: 'https://www.moestuin.nl' },
   datePublished: '2026-04-28',
   dateModified: '2026-04-28',
@@ -66,9 +66,9 @@ export default function TomatenstokkenPage() {
           <p className="dek">De stok plaatsen ná het uitplanten is de meest gemaakte fout. Je plukt er weken later de zure vruchten van, letterlijk. Hier is wanneer je het doet, hoe diep, en welk materiaal je nooit meer moet kopen.</p>
           <div className="byline-row">
             <div className="byline">
-              <div className="avatar">J</div>
+              <div className="avatar">S</div>
               <div className="who">
-                <b>Joris van der Wal</b>
+                <b>Sanne de Groot</b>
                 <span>Hoofdtuinier, sinds 2018</span>
               </div>
             </div>

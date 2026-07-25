@@ -20,7 +20,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Tien tomatenrassen die altijd lukken',
   description: "Van Gardeners' Delight tot Brandywine: tien betrouwbare tomatenrassen getest op smaak, opbrengst en robuustheid.",
-  author: { '@type': 'Person', name: 'Joris van der Wal' },
+  author: { '@type': 'Person', name: 'Sanne de Groot' },
   publisher: { '@type': 'Organization', name: 'Moestuin.nl', url: 'https://www.moestuin.nl' },
   datePublished: '2026-04-20',
   dateModified: '2026-04-20',
@@ -152,9 +152,9 @@ export default function TomatenrassenPage() {
           <p className="dek">Van de zoetste cherry tot het meest smaakvolle erfstuk: tien rassen die wij jaar na jaar kweken, met eerlijke noten over smaak, moeite en opbrengst. Inclusief één ras dat je gewoon moet proberen ook al lijkt het risico&apos;er.</p>
           <div className="byline-row">
             <div className="byline">
-              <div className="avatar">J</div>
+              <div className="avatar">S</div>
               <div className="who">
-                <b>Joris van der Wal</b>
+                <b>Sanne de Groot</b>
                 <span>Hoofdtuinier, sinds 2018</span>
               </div>
             </div>

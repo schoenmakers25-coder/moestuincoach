@@ -24,7 +24,7 @@ slug: "..."            # kort, keyword-rijk, geen datum
 date: "2026-07-06"
 description: "..."      # meta description, max 155 tekens
 excerpt: "..."         # korte intro voor de index
-author: "Moos"
+author: "Sanne de Groot"
 category: "seizoen"
 tags: ["...", "..."]
 primaryKeyword: "..."

@@ -9,8 +9,8 @@ description: >-
 excerpt: >-
   Augustus is geen maand om alles nog te willen opbouwen. Het is oogsten op het
   hoogtepunt, hier en daar doorzaaien voor de herfst, en vooral: leren loslaten.
-  Zo ziet de nazomer eruit op Hoeve 1700.
-author: Hans
+  Zo ziet de nazomer eruit op De Klaverhoeve.
+author: Sanne de Groot
 category: nieuw
 tags:
   - moestuin augustus
@@ -57,7 +57,7 @@ faq:
 
 Eind juli kantelt er iets in de moestuin. De grote opbouw van zaaien, verspenen, uitplanten en opbinden ligt achter je. Wat er nu staat, staat er. Augustus is daarmee een andere maand dan het drukke voorjaar: het is oogsten op het hoogtepunt, hier en daar doorzaaien voor de herfst, en vooral leren loslaten wat je toch niet meer in de hand hebt. De moestuin in augustus vraagt minder van je handen en meer van je geduld.
 
-Op Hoeve 1700 is dat het fijnste deel van het jaar. De haast is eruit. Je loopt 's ochtends met een bak door de tuin, plukt wat rijp is, trekt een paar onkruiden en laat de rest gewoon staan. In dit artikel loop ik langs wat er in augustus echt toe doet, en wat je met een gerust hart kunt overslaan.
+Op De Klaverhoeve is dat het fijnste deel van het jaar. De haast is eruit. Je loopt 's ochtends met een bak door de tuin, plukt wat rijp is, trekt een paar onkruiden en laat de rest gewoon staan. In dit artikel loop ik langs wat er in augustus echt toe doet, en wat je met een gerust hart kunt overslaan.
 
 ## Wat je in augustus nog kunt zaaien
 
@@ -85,7 +85,7 @@ Augustus is de maand van de volle bak. Het belangrijkste advies is simpel: blijf
 
 Het hart van de tuin hier is de kas, een glazen serre met zwart gecoate profielen, opgebouwd uit hergebruikt kasmateriaal. In augustus draait die op volle toeren, en dan is één ding het belangrijkst: **koel houden en luchten**. Zet ramen en deuren overdag wijd open, want onder glas kan het bij een hittegolf zó boven de 40°C lopen dat tomaten hun bloesem laten vallen.
 
-Tegelijk is de kas je voorsprong op de herfst. Terwijl het buiten afkoelt, zaai je onder glas alvast wintersla, spinazie en snijbiet door. Zo oogst je straks vers blad als de buitenbedden allang zijn uitgewerkt. Hoe onze kas is ontstaan, van een verwaarloosde ruïne tot werkende serre, lees je in het verhaal [over Hoeve 1700](/over).
+Tegelijk is de kas je voorsprong op de herfst. Terwijl het buiten afkoelt, zaai je onder glas alvast wintersla, spinazie en snijbiet door. Zo oogst je straks vers blad als de buitenbedden allang zijn uitgewerkt. Hoe onze kas is ontstaan, van een verwaarloosde ruïne tot werkende serre, lees je in het verhaal [over De Klaverhoeve](/over).
 
 ## Water, mulch en je vakantie
 

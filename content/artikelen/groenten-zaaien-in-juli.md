@@ -4,7 +4,7 @@ slug: "groenten-zaaien-in-juli"
 date: "2026-07-06"
 description: "In juli is het zaaiseizoen nog lang niet voorbij. Ontdek welke groenten je nu nog kunt zaaien voor een oogst tot diep in de herfst."
 excerpt: "Denk je dat het zaaiseizoen voorbij is? In juli kun je nog volop zaaien voor een tweede oogst. Dit zijn de gewassen die nu nog lukken."
-author: "Moos"
+author: "Sanne de Groot"
 category: "seizoen"
 tags: ["juli", "zaaien", "herfstoogst", "seizoen"]
 primaryKeyword: "in juli zaaien"

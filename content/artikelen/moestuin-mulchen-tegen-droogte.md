@@ -9,7 +9,7 @@ excerpt: >-
   Eind juli dreigt een nieuwe hittegolf en onbedekte grond kan tot 50°C
   opwarmen. Met de juiste mulchlaag houd je je bodem koel, vochtig en vol leven.
   Dit is hoe je het nu aanpakt.
-author: Moos
+author: Sanne de Groot
 category: nieuw
 tags:
   - mulchen

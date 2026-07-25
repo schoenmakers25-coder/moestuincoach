@@ -39,7 +39,7 @@ const jsonLdHowTo = {
     { '@type': 'HowToStep', name: 'Steun direct plaatsen', text: 'Zet de kooi of stok tegelijk met de plant, nooit later, anders prik je door de wortels.' },
     { '@type': 'HowToStep', name: 'Eerste twee weken', text: 'Water geven aan de voet, niet bemesten. Wacht op zichtbare nieuwe groei voor je begint te voeden.' },
   ],
-  author: { '@type': 'Person', name: 'Joris van der Wal' },
+  author: { '@type': 'Person', name: 'Sanne de Groot' },
   publisher: { '@type': 'Organization', name: 'Moestuin.nl', url: 'https://www.moestuin.nl' },
   datePublished: '2026-05-12',
   dateModified: '2026-05-12',
@@ -78,9 +78,9 @@ export default function TomatenUitplantenPage() {
           <p className="dek">Nu de nachten boven de tien graden blijven, mogen ze de grond in. Wat je vooraf moet doen, hoe diep je plant, en de drie fouten die elke beginner maakt, getest in onze eigen tuin.</p>
           <div className="byline-row">
             <div className="byline">
-              <div className="avatar">J</div>
+              <div className="avatar">S</div>
               <div className="who">
-                <b>Joris van der Wal</b>
+                <b>Sanne de Groot</b>
                 <span>Hoofdtuinier, actief sinds 2018</span>
               </div>
             </div>

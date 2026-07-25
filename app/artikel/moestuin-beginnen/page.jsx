@@ -20,7 +20,7 @@ const jsonLdArticle = {
   '@type': 'Article',
   headline: 'Moestuin beginnen: complete gids voor beginners',
   description: 'Zo begin je een moestuin als beginner: de juiste plek, de beste groenten voor starters, grond voorbereiden en de vijf meest gemaakte fouten.',
-  author: { '@type': 'Person', name: 'Joris van der Wal' },
+  author: { '@type': 'Person', name: 'Sanne de Groot' },
   publisher: { '@type': 'Organization', name: 'Moestuin.nl', url: 'https://www.moestuin.nl' },
   datePublished: '2026-05-18',
   dateModified: '2026-05-18',
@@ -93,9 +93,9 @@ export default function MoestuinBeginnersPage() {
           <p className="dek">Geen groene vingers nodig. Wel een goede plek, de juiste groenten en één cruciale les die de meeste beginners pas na het eerste mislukte seizoen leren. Dit is wat je moet weten voordat je een spade in de grond steekt.</p>
           <div className="byline-row">
             <div className="byline">
-              <div className="avatar">J</div>
+              <div className="avatar">S</div>
               <div className="who">
-                <b>Joris van der Wal</b>
+                <b>Sanne de Groot</b>
                 <span>Hoofdtuinier, actief sinds 2018</span>
               </div>
             </div>

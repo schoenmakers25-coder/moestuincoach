@@ -20,7 +20,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Wat is er mis met je tomaten? Zes diagnoses',
   description: 'Gele bladeren, splijtende vruchten, bruine vlekken: zes veelvoorkomende tomatenproblemen uitgelegd en opgelost.',
-  author: { '@type': 'Person', name: 'Joris van der Wal' },
+  author: { '@type': 'Person', name: 'Sanne de Groot' },
   publisher: { '@type': 'Organization', name: 'Moestuin.nl', url: 'https://www.moestuin.nl' },
   datePublished: '2026-05-10',
   dateModified: '2026-05-10',
@@ -59,9 +59,9 @@ export default function TomatenproblemenPage() {
           <p className="dek">Bruine vlekken, gele blaadjes, vruchten die splijten halverwege de zomer: elke klacht heeft een oorzaak, en elke oorzaak heeft een oplossing. Hier zijn de zes meest voorkomende, met wat je er aan doet.</p>
           <div className="byline-row">
             <div className="byline">
-              <div className="avatar">J</div>
+              <div className="avatar">S</div>
               <div className="who">
-                <b>Joris van der Wal</b>
+                <b>Sanne de Groot</b>
                 <span>Hoofdtuinier, sinds 2018</span>
               </div>
             </div>

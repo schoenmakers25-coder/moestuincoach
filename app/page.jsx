@@ -172,16 +172,16 @@ export default function Page() {
         </section>
       )}
 
-      {/* Hoeve 1700: merkstrip */}
+      {/* Merkstrip: De Klaverhoeve */}
       <section className="wrap" style={{ padding: '8px 0 4px' }}>
         <Link
           href="/over"
-          aria-label="Over Hoeve 1700, de plek achter Moestuin.nl"
+          aria-label="Over De Klaverhoeve, de plek achter Moestuin.nl"
           style={{ position: 'relative', display: 'block', width: '100%', aspectRatio: '16 / 7', minHeight: 220, borderRadius: 6, overflow: 'hidden', textDecoration: 'none' }}
         >
           <Image
-            src="/hoeve/hoeve1700.jpg"
-            alt="Hoeve 1700 vanuit de lucht, met moestuin en boomgaard in glooiend heuvelland"
+            src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1600&h=900&fit=crop&auto=format&q=75"
+            alt="De moestuin van De Klaverhoeve in glooiend akkerland"
             fill
             sizes="(max-width: 1040px) 100vw, 1000px"
             style={{ objectFit: 'cover' }}
@@ -192,7 +192,7 @@ export default function Page() {
               Van de hoeve
             </div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.05, marginBottom: 10 }}>
-              De moestuin en kas van <span style={{ fontStyle: 'italic' }}>Hoeve 1700.</span>
+              De moestuin en kas van <span style={{ fontStyle: 'italic' }}>De Klaverhoeve.</span>
             </div>
             <div style={{ fontSize: 15, lineHeight: 1.5, color: 'rgba(244,239,228,.82)' }}>
               De plek achter Moestuin.nl, een oude hoeve waar we de moestuin en kas weer opknappen.{' '}
@@ -223,8 +223,8 @@ export default function Page() {
             </div>
             <div className="tool-band__media">
               <Image
-                src="/hoeve/bakken.jpg"
-                alt="Moestuinbakken met verse, donkere aarde op Hoeve 1700"
+                src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=1200&h=1000&fit=crop&auto=format&q=75"
+                alt="Een moestuinbed vol sla en kruiden op De Klaverhoeve"
                 fill
                 sizes="(max-width: 860px) 100vw, 50vw"
               />

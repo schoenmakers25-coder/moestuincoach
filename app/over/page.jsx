@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Over Moestuin.nl: de moestuin en kas van Hoeve 1700',
+  title: 'Over Moestuin.nl: de moestuin en kas van De Klaverhoeve',
   description:
-    'Moestuin.nl komt van Hoeve 1700, een oude hoeve waar we een verwaarloosde moestuin en kas weer tot leven brengen. Lees het verhaal, en hoe deze site gemaakt wordt.',
+    'Moestuin.nl komt van De Klaverhoeve, een oude hoeve waar we een verwaarloosde moestuin en kas weer tot leven brengen. Lees het verhaal, en hoe deze site gemaakt wordt.',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.moestuin.nl/over' },
 }
@@ -48,25 +48,25 @@ export default function OverPage() {
 
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 6vw, 56px)', lineHeight: 1.02, letterSpacing: '-0.01em', marginBottom: 20 }}>
         Moestuin<span style={{ fontStyle: 'italic', color: 'var(--terracotta)' }}>.</span>nl komt van{' '}
-        <span style={{ fontStyle: 'italic', color: 'var(--terracotta)' }}>Hoeve 1700.</span>
+        <span style={{ fontStyle: 'italic', color: 'var(--terracotta)' }}>De Klaverhoeve.</span>
       </h1>
 
       <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-2)', maxWidth: '58ch', marginBottom: 40 }}>
-        Moestuin.nl hoort bij Hoeve 1700: een oude hoeve in glooiend heuvelland, met een moestuin en een kas
+        Moestuin.nl hoort bij De Klaverhoeve: een oude hoeve in glooiend heuvelland, met een moestuin en een kas
         die we stap voor stap opknappen. Wat we onderweg leren over zaaien, oogsten en de seizoenen, delen we op de site.
       </p>
 
       <Figure
-        src="/hoeve/hoeve1700.jpg"
-        alt="Hoeve 1700 vanuit de lucht, met moestuin en boomgaard in glooiend heuvelland"
+        src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1600&h=900&fit=crop&auto=format&q=75"
+        alt="De moestuin van De Klaverhoeve in glooiend akkerland"
         ratio="3 / 2"
-        caption="Hoeve 1700: de thuisbasis van Moestuin.nl."
+        caption="De Klaverhoeve: de thuisbasis van Moestuin.nl."
       />
 
       <section style={{ margin: '48px 0', borderTop: '1px solid var(--line)', paddingTop: 40 }}>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 16 }}>Een verwaarloosde tuin, terug tot leven</h2>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
-          Toen we op Hoeve 1700 begonnen, waren de moestuin en de kas jarenlang aan hun lot overgelaten:
+          Toen we op De Klaverhoeve begonnen, waren de moestuin en de kas jarenlang aan hun lot overgelaten:
           overwoekerde bedden, een kas vol wildgroei. Precies dat maakt het mooi. Een moestuin opnieuw opbouwen
           is geen klus die je even afvinkt: het is een langzaam ritme van zaaien, wachten, bijsturen en oogsten.
           Je handen in de grond, je hoofd even leeg.
@@ -78,10 +78,10 @@ export default function OverPage() {
       </section>
 
       <Figure
-        src="/hoeve/kas1.jpg"
-        alt="De glazen kas op Hoeve 1700 bij zonsopkomst, met ochtendnevel en een oude eik"
+        src="https://images.unsplash.com/photo-1569736957322-b5e515f249b0?w=1000&h=1250&fit=crop&auto=format&q=75"
+        alt="De kas van De Klaverhoeve, vol planten onder glas"
         ratio="4 / 5"
-        caption="De kas bij zonsopkomst. Zwart gecoate profielen, hergebruikt glas."
+        caption="De kas: planten onder glas, het hart van de tuin."
       />
 
       <section style={{ margin: '48px 0' }}>
@@ -125,7 +125,7 @@ export default function OverPage() {
       <section style={{ margin: '48px 0', background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 4, padding: '28px 30px' }}>
         <div style={{ ...mono, color: 'var(--muted)', marginBottom: 12 }}>Hoe deze site gemaakt wordt</div>
         <p style={{ lineHeight: 1.7, color: 'var(--ink-2)', marginBottom: 12 }}>
-          Moestuin.nl combineert twee dingen: de praktijk op Hoeve 1700 en de snelheid van moderne tools. De
+          Moestuin.nl combineert twee dingen: de praktijk op De Klaverhoeve en de snelheid van moderne tools. De
           wekelijkse gidsen stellen we met behulp van AI samen, en lezen we vervolgens na en sturen we bij vanuit
           wat hier op de hoeve echt werkt. Zo houden we het tempo hoog zonder de praktijk uit het oog te verliezen.
         </p>
@@ -138,7 +138,7 @@ export default function OverPage() {
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 20 }}>Feiten</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 1, background: 'var(--line)', border: '1px solid var(--line)' }}>
           {[
-            ['Thuisbasis', 'Hoeve 1700'],
+            ['Thuisbasis', 'De Klaverhoeve'],
             ['Zaaikalender', '36 gewassen, gratis'],
             ['Taal', 'Nederlands (NL + BE)'],
             ['Elke week', 'Nieuwe gids'],
